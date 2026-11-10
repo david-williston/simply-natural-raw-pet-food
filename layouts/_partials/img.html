@@ -1,0 +1,21 @@
+{{- /*
+  Responsive image from assets/images.
+  Params: src (path under assets/images), alt, class, sizes, lazy (default true), widths
+*/ -}}
+{{- $img := resources.Get (printf "images/%s" .src) -}}
+{{- if not $img }}{{ errorf "img partial: assets/images/%s not found" .src }}{{ end -}}
+{{- $widths := .widths | default (slice 480 800 1200 1680) -}}
+{{- $srcs := slice -}}
+{{- range $widths -}}
+  {{- if le . $img.Width -}}
+    {{- $r := $img.Resize (printf "%dx webp q82" .) -}}
+    {{- $srcs = $srcs | append (printf "%s %dw" $r.RelPermalink .) -}}
+  {{- end -}}
+{{- end -}}
+{{- $fbw := cond (gt $img.Width 1200) 1200 $img.Width -}}
+{{- $fb := $img.Resize (printf "%dx webp q82" $fbw) -}}
+<img src="{{ $fb.RelPermalink }}"
+  {{- with $srcs }} srcset="{{ delimit . ", " }}" sizes="{{ $.sizes | default "(min-width: 1100px) 1100px, 100vw" }}"{{ end }}
+  width="{{ $fb.Width }}" height="{{ $fb.Height }}" alt="{{ .alt }}"
+  {{- with .class }} class="{{ . }}"{{ end }}
+  {{- if ne .lazy false }} loading="lazy" decoding="async"{{ else }} fetchpriority="high"{{ end }}>

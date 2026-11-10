@@ -1,0 +1,148 @@
+{{- define "main" }}
+{{- $b := site.Params.business -}}
+{{- $tel := replace $b.phone "-" "" -}}
+
+<section class="hero">
+  {{ partial "img.html" (dict "src" "hero-dogs.jpg" "alt" "" "class" "hero-img" "lazy" false "sizes" "100vw") }}
+  <div class="wrap hero-inner">
+    <p class="eyebrow">{{ $b.neighbourhood }}, Vancouver</p>
+    <h1>Real food for the furry members of your family</h1>
+    <p class="hero-lead">Frozen raw diets, carefully chosen dry and canned food, supplements and treats — plus friendly advice from people who know pet nutrition.</p>
+    <div class="btn-row">
+      <a class="btn btn-accent" href="{{ "products/" | relURL }}">See what we carry</a>
+      <a class="btn btn-ghost-light" href="#visit">{{ partial "icon.html" "pin" }}Visit the shop</a>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap strip-grid">
+    <a href="{{ "products/" | relURL }}">{{ partial "icon.html" "bowl" }}<span><strong>Raw &amp; natural food</strong>Free-range, non-medicated meats</span></a>
+    <a href="{{ "services/" | relURL }}#meal-plans">{{ partial "icon.html" "clipboard" }}<span><strong>Custom meal plans</strong>For allergies, aging and more</span></a>
+    <a href="{{ "deliveries/" | relURL }}">{{ partial "icon.html" "truck" }}<span><strong>Local delivery</strong>To your door in Vancouver</span></a>
+    <a href="{{ "puppy-kindergarten/" | relURL }}">{{ partial "icon.html" "paw" }}<span><strong>Puppy Kindergarten</strong>Six-week positive training</span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Why feed raw</p>
+      <h2>A species-appropriate diet, and a pet that shows it</h2>
+      <p>Do you have doubts about what to feed your pet? Every member of your family — even the furry ones — deserves nourishing, wholesome, natural food. We stock our shelves with only the finest raw pet food, made by respected suppliers, and our team will guide you to the best choice for your furry pal.</p>
+      <p>Dogs and cats are built to thrive on fresh, unprocessed food. Raw diets keep the enzymes and nutrients that heavy processing removes — and leave out the fillers, preservatives and excess carbohydrates.</p>
+      <p>Pet parents who switch tell us they notice:</p>
+      <ul class="checklist">
+        {{- range slice "Improved digestion" "Clean teeth" "Strong nails" "Healthy ears" "A stronger immune system" "Increased resistance to disease and parasites" "Healthy skin and coat" "No more foul body odour or bad breath" }}
+        <li>{{ partial "icon.html" "check" }}{{ . }}</li>
+        {{- end }}
+      </ul>
+      <p class="aside-note">…and the satisfaction of knowing exactly what your pet is eating.</p>
+      <a class="link-arrow" href="{{ "nutrition/" | relURL }}">Read our raw feeding guide {{ partial "icon.html" "arrow" }}</a>
+    </div>
+    <div class="split-media">
+      {{ partial "img.html" (dict "src" "store/freezers.jpg" "alt" "Freezers stocked with frozen raw pet food at Simply Natural" "sizes" "(min-width: 900px) 520px, 100vw") }}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">In the shop</p>
+      <h2>Everything a naturally fed pet needs</h2>
+      <p>Alongside raw food, we carry a small selection of the highest-quality convenience food — dehydrated, freeze-dried and select kibble brands. Special orders are always welcome.</p>
+    </div>
+    <div class="cards cards-4">
+      {{- $cards := slice
+        (dict "img" "store/raw-natural-instincts.jpg" "alt" "Natural Instincts frozen raw food in lamb, goat and turkey" "title" "Frozen raw diets" "text" "Complete raw meals and raw meaty bones for dogs and cats." "url" "products/#dog-food")
+        (dict "img" "store/interior-shelves.jpg" "alt" "Shelves of dry food and accessories inside the store" "title" "Dry, canned & freeze-dried" "text" "A small, select range of the best convenience foods." "url" "products/#dog-food")
+        (dict "img" "store/supplements.jpg" "alt" "Pet supplements including omega oils and probiotics" "title" "Supplements" "text" "Omega oils, probiotics and targeted support." "url" "products/#supplements")
+        (dict "img" "store/treats.jpg" "alt" "Wall of natural pet treats" "title" "Treats, toys & gear" "text" "Raw-compatible treats, training supplies and accessories." "url" "products/#treats") }}
+      {{- range $cards }}
+      <a class="card" href="{{ .url | relURL }}">
+        <div class="card-media">{{ partial "img.html" (dict "src" .img "alt" .alt "sizes" "(min-width: 900px) 260px, 50vw") }}</div>
+        <div class="card-body"><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+      </a>
+      {{- end }}
+    </div>
+    <p class="center"><a class="btn btn-primary" href="{{ "products/" | relURL }}">Browse brands we carry</a></p>
+    <p class="center follow-note">Stay up to date on new products by connecting with us on <a href="{{ $b.facebook }}" target="_blank" rel="noopener">Facebook</a>.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">New to raw?</p>
+      <h2>Switching is simpler than you think</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Start hungry</h3><p>A half-day or full-day fast before the first raw meal makes sure your pet comes to the bowl with a good appetite.</p></li>
+      <li><h3>Go small</h3><p>Offer a smaller portion at first and watch how they handle the fresh food.</p></li>
+      <li><h3>Swap gradually</h3><p>Replace a little more of the old food with raw at each meal, adjusting the pace to your pet’s digestion.</p></li>
+    </ol>
+    <p class="center"><a class="link-arrow" href="{{ "nutrition/" | relURL }}#transitioning">Full transition tips {{ partial "icon.html" "arrow" }}</a></p>
+  </div>
+</section>
+
+<section class="photo-band">
+  {{ partial "img.html" (dict "src" "hero-girl-dog.jpg" "alt" "A little girl hugging her dog on the floor" "sizes" "100vw") }}
+</section>
+
+<section class="section">
+  <div class="wrap split split-reverse">
+    <div>
+      <p class="eyebrow">More than a pet food store</p>
+      <h2>Meal plans, puppy classes and delivery</h2>
+      <p>What goes in the bowl has a big effect on health. If your dog or cat is dealing with a health issue, we can put together a meal plan to help. We have plans for:</p>
+      <ul class="chips">
+        {{- range slice "Allergies" "Cancer" "Renal conditions" "Liver conditions" "Digestive problems" "Aging" }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
+      <div class="mini-links">
+        <a href="{{ "services/" | relURL }}#meal-plans"><strong>Meal plans</strong><span>Built around your pet’s needs</span></a>
+        <a href="{{ "puppy-kindergarten/" | relURL }}"><strong>Puppy Kindergarten</strong><span>For puppies 9–24 weeks</span></a>
+        <a href="{{ "deliveries/" | relURL }}"><strong>Delivery</strong><span>Never run out of food</span></a>
+      </div>
+    </div>
+    <div class="split-media">
+      {{ partial "img.html" (dict "src" "banner-puppy.jpg" "alt" "A puppy rolling on the grass" "class" "media-crop" "sizes" "(min-width: 900px) 520px, 100vw") }}
+    </div>
+  </div>
+</section>
+
+<section class="section section-tint" id="visit">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Visit us</p>
+      <h2>Find us on West Boulevard in {{ $b.neighbourhood }}</h2>
+      <p>A trusted neighbourhood source for over a decade — recommended by trainers, K9 police handlers, breeders, rescue organizations and holistic veterinarians across the Lower Mainland.</p>
+    </div>
+    <div class="visit">
+      <div class="visit-photos">
+        {{ partial "img.html" (dict "src" "store/storefront.jpg" "alt" "Simply Natural Raw Pet Food storefront on West Boulevard" "sizes" "(min-width: 900px) 300px, 50vw") }}
+        {{ partial "img.html" (dict "src" "store/interior-aisle.jpg" "alt" "Inside the store" "sizes" "(min-width: 900px) 300px, 50vw") }}
+      </div>
+      <div class="visit-card">
+        <h3>{{ site.Title }}</h3>
+        <p class="open-status pill" data-open-status><span class="dot"></span><span data-open-text>Open 7 days a week</span></p>
+        <ul class="contact-list">
+          <li>{{ partial "icon.html" "pin" }}<a href="{{ $b.mapsLink }}" target="_blank" rel="noopener">{{ $b.street }}<br>{{ $b.city }}, {{ $b.region }} {{ $b.postal }}</a></li>
+          <li>{{ partial "icon.html" "phone" }}<a href="tel:{{ $tel }}">{{ $b.phone }}</a></li>
+          <li>{{ partial "icon.html" "mail" }}<a href="mailto:{{ $b.email }}">{{ $b.email }}</a></li>
+        </ul>
+        {{ partial "hours.html" . }}
+        <p class="perk">{{ partial "icon.html" "star" }}Ask about our frequent buyer program.</p>
+        <a class="btn btn-primary btn-block" href="{{ $b.mapsLink }}" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="visit-map">
+        <iframe src="{{ $b.mapsEmbed }}" title="Map showing {{ site.Title }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+{{- end }}

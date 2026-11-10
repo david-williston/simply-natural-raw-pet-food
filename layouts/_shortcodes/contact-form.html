@@ -1,0 +1,22 @@
+{{- $b := site.Params.business -}}
+{{- $action := site.Params.contactFormAction -}}
+<form class="contact-form" {{ if $action }}action="{{ $action }}" method="post"{{ else }}data-mailto="{{ $b.email }}"{{ end }}>
+  <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
+  <div class="field-row">
+    <div class="field"><label for="cf-phone">Phone number</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel" required></div>
+    <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+  </div>
+  <div class="field"><label for="cf-message">How can we help?</label><textarea id="cf-message" name="message" rows="6" required placeholder="Tell us about your pet — species, age, and what you’re looking for."></textarea></div>
+  <button class="btn btn-primary" type="submit">Send message</button>
+  <p class="form-note">We’ll get back to you as quickly as we can. For anything urgent, call <a href="tel:{{ replace $b.phone "-" "" }}">{{ $b.phone }}</a>.</p>
+</form>
+{{- if not $action }}
+<script>
+document.querySelector('.contact-form[data-mailto]').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target, v = function (n) { return f.elements[n].value.trim(); };
+  var body = v('message') + '\n\n' + v('name') + '\n' + v('phone') + '\n' + v('email');
+  location.href = 'mailto:' + f.dataset.mailto + '?subject=' + encodeURIComponent('Website enquiry from ' + v('name')) + '&body=' + encodeURIComponent(body);
+});
+</script>
+{{- end }}

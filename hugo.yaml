@@ -1,0 +1,91 @@
+baseURL: https://www.simplynaturalrawpet.ca/
+locale: en-ca
+title: Simply Natural Raw Pet Food
+theme: PaperMod
+
+enableRobotsTXT: true
+disableKinds: [taxonomy, term, rss]
+
+outputs:
+  home: [HTML, JSON]   # JSON = search index
+
+minify:
+  minifyOutput: true
+
+params:
+  env: production
+  description: >-
+    Raw, natural food for dogs and cats in Kerrisdale, Vancouver. Frozen raw
+    diets, select dry and canned food, supplements, treats, custom meal plans,
+    puppy classes and local delivery.
+  keywords: [raw pet food Vancouver, raw dog food, raw cat food, Kerrisdale pet store, pet supplements, pet food delivery]
+  author: Simply Natural Raw Pet Food
+
+  # Site is light-only: the logo is a white-background image.
+  defaultTheme: light
+  disableThemeToggle: true
+  disableScrollToTop: false
+
+  assets:
+    favicon: /favicon.svg
+    favicon16x16: /favicon.svg
+    favicon32x32: /favicon.svg
+    apple_touch_icon: /favicon.svg
+    safari_pinned_tab: /favicon.svg
+    theme_color: "#759044"
+
+  # ---- Business details (used by header, footer, contact page, structured data)
+  business:
+    phone: "604-266-1125"
+    email: info@simplynaturalrawpet.ca
+    street: 5565 West Boulevard
+    city: Vancouver
+    region: BC
+    postal: V6M 3W6
+    neighbourhood: Kerrisdale
+    lat: 49.2358418
+    lng: -123.1558022
+    facebook: https://www.facebook.com/SimplyNaturalRawPetFood/
+    mapsLink: https://www.google.com/maps/search/?api=1&query=Simply+Natural+Raw+Pet+Food+5565+West+Boulevard+Vancouver
+    mapsEmbed: https://www.google.com/maps?q=Simply+Natural+Raw+Pet+Food,+5565+West+Boulevard,+Vancouver,+BC&output=embed
+    # Opening hours, 24h clock. day: 0 = Sunday … 6 = Saturday
+    hours:
+      - { label: Monday – Friday, days: [1, 2, 3, 4, 5], open: "10:00", close: "20:00", text: 10 AM – 8 PM }
+      - { label: Saturday, days: [6], open: "10:00", close: "19:00", text: 10 AM – 7 PM }
+      - { label: Sunday, days: [0], open: "10:00", close: "18:00", text: 10 AM – 6 PM }
+    holidayHours: "Statutory holidays: 10 AM – 5 PM"
+    payments: [Cash, Interac, Visa, Mastercard, American Express]
+
+  # ---- Announcement bar. Set enabled: false to hide it.
+  announcement:
+    enabled: true
+    text: Our Holiday Sale is on.
+    linkText: See the flyer
+    url: /files/holiday-sale.pdf
+
+  # ---- Contact form. Paste a form endpoint (e.g. Formspree, Netlify Forms URL)
+  # to receive submissions. While empty, the form opens the visitor's email app.
+  contactFormAction: ""
+
+  # ---- Search (fuse.js): match anywhere in the text, tolerate small typos
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    ignoreLocation: true
+    threshold: 0.3
+    minMatchCharLength: 2
+    keys: [title, summary, content]
+
+menus:
+  main:
+    - { name: About, pageRef: /about-us, weight: 10 }
+    - { name: Products, pageRef: /products, weight: 20 }
+    - { name: Raw Feeding, pageRef: /nutrition, weight: 30 }
+    - { name: Services, pageRef: /services, weight: 40 }
+    - { name: Delivery, pageRef: /deliveries, weight: 50 }
+    - { name: Contact, pageRef: /contact-us, weight: 60 }
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false

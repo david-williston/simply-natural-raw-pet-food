@@ -1,0 +1,7 @@
+{{- /* Usage: {{< photos "store/a.jpg|Alt text" "b.jpg|Alt text" >}} */ -}}
+<div class="photo-row photo-row-{{ len .Params }}">
+  {{- range .Params }}
+  {{- $p := split . "|" }}
+  <figure>{{ partial "img.html" (dict "src" (index $p 0) "alt" (index $p 1 | default "") "sizes" "(min-width: 900px) 360px, 50vw") }}</figure>
+  {{- end }}
+</div>

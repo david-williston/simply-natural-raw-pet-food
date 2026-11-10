@@ -1,0 +1,17 @@
+{{- $b := site.Params.business -}}
+{{- $tel := replace $b.phone "-" "" -}}
+<section class="cta-band">
+  <canvas id="bg-fish" aria-hidden="true"></canvas>
+  <div class="wrap cta-band-inner">
+    <div>
+      <h2>Not sure what to feed?</h2>
+      <p>Tell us about your dog or cat and we’ll help you choose — in store, by phone or by email.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-accent" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}Call {{ $b.phone }}</a>
+      <a class="btn btn-ghost-light" href="{{ "contact-us/" | relURL }}">Send a message</a>
+    </div>
+  </div>
+</section>
+{{- $fish := resources.Get "js/fish.js" | minify | fingerprint }}
+<script defer src="{{ $fish.RelPermalink }}" integrity="{{ $fish.Data.Integrity }}"></script>

@@ -1,0 +1,68 @@
+{{- define "main" }}
+<section class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="{{ "" | relLangURL }}">Home</a> <span>/</span> <span aria-current="page">{{ .Title }}</span>
+    </nav>
+    <h1>{{ .Title }}</h1>
+    <p class="page-lead">Looking for a brand, a product or feeding advice? Start typing.</p>
+  </div>
+</section>
+
+<div class="wrap search-page">
+  <div id="searchbox" class="searchbox">
+    <div class="search-field">
+      {{ partial "icon.html" "search" }}
+      <input id="searchInput" autofocus disabled placeholder="{{ .Params.placeholder | default "Search" }}"
+        aria-label="Search the site" type="search" autocomplete="off" maxlength="64">
+    </div>
+    <ul id="searchResults" class="searchResults" aria-label="Search results"></ul>
+    <p class="search-empty" hidden>No results. Try a brand name like “Acana”, or a topic like “delivery” or “supplements”.</p>
+  </div>
+  <div class="search-suggest">
+    <p>Popular:</p>
+    <ul class="chips">
+      {{- range slice "Raw dog food" "Cat food" "Supplements" "Treats" "Meal plans" "Delivery" "Puppy" "Hours" }}
+      <li><button type="button" data-q="{{ . }}">{{ . }}</button></li>
+      {{- end }}
+    </ul>
+  </div>
+</div>
+<script>
+(function () {
+  var input = document.getElementById('searchInput'), list = document.getElementById('searchResults'), empty = document.querySelector('.search-empty');
+  var pages = [];
+  fetch('../index.json').then(function (r) { return r.json(); }).then(function (d) { pages = d; });
+
+  var run = function (q) { input.value = q; input.dispatchEvent(new Event('input', { bubbles: true })); input.focus(); };
+  document.querySelectorAll('.search-suggest button').forEach(function (b) { b.addEventListener('click', function () { run(b.dataset.q); }); });
+
+  // The theme's fuzzy search matches the query as one phrase. If that finds nothing
+  // for a multi-word query, fall back to pages containing every word.
+  var fallback = function (q) {
+    var words = q.toLowerCase().split(/\s+/).filter(function (w) { return w.length > 1; });
+    if (words.length < 2) return;
+    pages.filter(function (p) {
+      var text = (p.title + ' ' + p.content).toLowerCase();
+      return words.every(function (w) { return text.indexOf(w) > -1 || text.indexOf(w.replace(/s$/, '')) > -1; });
+    }).forEach(function (p) {
+      var li = document.createElement('li'), a = document.createElement('a');
+      li.textContent = p.title;
+      a.className = 'entry-link'; a.href = p.permalink; a.setAttribute('aria-label', p.title);
+      li.appendChild(a); list.appendChild(li);
+    });
+  };
+  var update = function () {
+    var q = input.value.trim();
+    if (q.length > 1 && !list.children.length) fallback(q);
+    empty.hidden = !(q.length > 1 && !list.children.length);
+  };
+  input.addEventListener('input', function () { setTimeout(update, 350); });
+
+  // Support /search/?q=term
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) { var t = setInterval(function () { if (!input.disabled) { clearInterval(t); run(q); } }, 50); }
+})();
+</script>
+
+{{- end }}

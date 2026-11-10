@@ -1,0 +1,22 @@
+{{- $b := site.Params.business -}}
+{{- $specs := slice -}}
+{{- range $b.hours -}}
+  {{- $names := slice -}}
+  {{- range .days }}{{ $names = $names | append (index (slice "Sunday" "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday") .) }}{{ end -}}
+  {{- $specs = $specs | append (dict "@type" "OpeningHoursSpecification" "dayOfWeek" $names "opens" .open "closes" .close) -}}
+{{- end -}}
+{{- $ld := dict
+  "@context" "https://schema.org"
+  "@type" "PetStore"
+  "name" site.Title
+  "url" site.BaseURL
+  "telephone" (printf "+1-%s" $b.phone)
+  "email" $b.email
+  "image" ((resources.Get "images/store/storefront.jpg").Permalink)
+  "address" (dict "@type" "PostalAddress" "streetAddress" $b.street "addressLocality" $b.city "addressRegion" $b.region "postalCode" $b.postal "addressCountry" "CA")
+  "geo" (dict "@type" "GeoCoordinates" "latitude" $b.lat "longitude" $b.lng)
+  "openingHoursSpecification" $specs
+  "paymentAccepted" (delimit $b.payments ", ")
+  "sameAs" (slice $b.facebook)
+-}}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>

@@ -1,0 +1,38 @@
+{{- $b := site.Params.business -}}
+{{- $tel := replace $b.phone "-" "" -}}
+<a class="skip-link" href="#main">Skip to content</a>
+{{- with site.Params.announcement }}{{ if .enabled }}
+<div class="announce">
+  <span>{{ .text }}</span>
+  {{ with .url }}<a href="{{ . | relURL }}"{{ if strings.HasSuffix . ".pdf" }} target="_blank" rel="noopener"{{ end }}>{{ $.Site.Params.announcement.linkText | default "Learn more" }} {{ partial "icon.html" "arrow" }}</a>{{ end }}
+</div>
+{{- end }}{{ end }}
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="{{ $b.mapsLink }}" target="_blank" rel="noopener">{{ partial "icon.html" "pin" }}{{ $b.street }}, {{ $b.neighbourhood }}</a>
+    <span class="open-status" data-open-status>{{ partial "icon.html" "clock" }}<span data-open-text>Open 7 days a week</span></span>
+    <a class="topbar-phone" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}{{ $b.phone }}</a>
+  </div>
+</div>
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="brand" href="{{ "" | relLangURL }}" aria-label="{{ site.Title }} – home">
+      {{- $logo := resources.Get "images/logo.jpg" -}}
+      <img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" alt="{{ site.Title }}">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        {{- $current := . -}}
+        {{- range site.Menus.main }}
+        {{- $active := or ($current.IsMenuCurrent "main" .) (eq $current.RelPermalink .URL) (and (eq .URL "/services/") (eq $current.RelPermalink "/puppy-kindergarten/")) }}
+        <li><a href="{{ .URL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+      <a class="nav-search{{ if eq .Layout "search" }} active{{ end }}" href="{{ "search/" | relURL }}" aria-label="Search" title="Search (Alt + /)" accesskey="/">{{ partial "icon.html" "search" }}<span>Search</span></a>
+      <a class="btn btn-primary nav-cta" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}Call {{ $b.phone }}</a>
+    </nav>
+  </div>
+</header>

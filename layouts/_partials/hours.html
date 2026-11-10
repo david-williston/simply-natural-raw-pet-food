@@ -1,0 +1,10 @@
+{{- $b := site.Params.business -}}
+<dl class="hours" data-hours='{{ $b.hours | jsonify }}'>
+  {{- range $b.hours }}
+  <div class="hours-row" data-days="{{ delimit .days "," }}">
+    <dt>{{ .label }}</dt>
+    <dd>{{ .text }}</dd>
+  </div>
+  {{- end }}
+</dl>
+{{- with $b.holidayHours }}<p class="hours-note">{{ . }}</p>{{ end }}
