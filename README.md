@@ -43,7 +43,8 @@ A brief trail of mirrored paw prints crosses the bottom edge on page entry and
 every 30 seconds while the tab is visible. On a first visit it waits for the logo
 reveal; later visits show it after one second. It uses the original paw artwork,
 does not intercept clicks, pauses in hidden tabs, and is disabled for reduced
-motion. The StrayCats.love footer credit and logo are
+motion. Prints use soft cream over dark sections and the original olive over
+light sections, adapting as visitors scroll. The StrayCats.love footer credit and logo are
 temporarily hidden; set `params.showDeveloperCredit: true` in `hugo.yaml` to restore them.
 
 Search uses an index for the current language, and result cards show excerpts
