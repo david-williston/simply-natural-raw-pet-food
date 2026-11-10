@@ -88,13 +88,13 @@
         print.className = 'paw-step';
         print.style.left = `${point.x - Math.sin(point.heading) * side}px`;
         print.style.top = `${point.y + Math.cos(point.heading) * side}px`;
-        print.style.setProperty('--paw-turn', `${point.heading * 180 / Math.PI + 90 + (step % 2 ? -8 : 8)}deg`);
+        print.style.setProperty('--paw-turn', `${point.heading * 180 / Math.PI + 90 + (step % 2 ? 8 : -8)}deg`);
         const image = document.createElement('img');
         image.src = trail.dataset.pawSrc;
         image.alt = '';
         image.width = 56;
         image.height = 47;
-        image.style.transform = step % 2 ? 'scaleX(-1)' : 'none';
+        image.style.transform = step % 2 ? 'none' : 'scaleX(-1)';
         print.append(image); trail.append(print);
         updateTone(print);
         print.addEventListener('animationend', () => print.remove(), { once: true });
