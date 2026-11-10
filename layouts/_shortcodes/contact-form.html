@@ -7,7 +7,8 @@
     <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
   </div>
   <div class="field"><label for="cf-message">How can we help?</label><textarea id="cf-message" name="message" rows="6" required placeholder="Tell us about your pet — species, age, and what you’re looking for."></textarea></div>
-  <button class="btn btn-primary" type="submit">Send message</button>
+  <button class="btn btn-primary" type="submit">{{ if $action }}Send message{{ else }}Open email draft{{ end }}</button>
+  {{ if not $action }}<p class="form-note">This opens a draft in your email app. Send the email from there to contact us. You can also email <a href="mailto:{{ $b.email }}">{{ $b.email }}</a> directly.</p>{{ end }}
   <p class="form-note">We’ll get back to you as quickly as we can. For anything urgent, call <a href="tel:{{ replace $b.phone "-" "" }}">{{ $b.phone }}</a>.</p>
 </form>
 {{- if not $action }}

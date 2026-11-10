@@ -4,7 +4,7 @@
 {{- with site.Params.announcement }}{{ if .enabled }}
 <div class="announce">
   <span>{{ .text }}</span>
-  {{ with .url }}<a href="{{ . | relURL }}"{{ if strings.HasSuffix . ".pdf" }} target="_blank" rel="noopener"{{ end }}>{{ $.Site.Params.announcement.linkText | default "Learn more" }} {{ partial "icon.html" "arrow" }}</a>{{ end }}
+  {{ with .url }}<a href="{{ strings.TrimPrefix "/" . | relURL }}"{{ if strings.HasSuffix . ".pdf" }} target="_blank" rel="noopener"{{ end }}>{{ $.Site.Params.announcement.linkText | default "Learn more" }} {{ partial "icon.html" "arrow" }}</a>{{ end }}
 </div>
 {{- end }}{{ end }}
 <div class="topbar">
@@ -27,7 +27,7 @@
       <ul>
         {{- $current := . -}}
         {{- range site.Menus.main }}
-        {{- $active := or ($current.IsMenuCurrent "main" .) (eq $current.RelPermalink .URL) (and (eq .URL "/services/") (eq $current.RelPermalink "/puppy-kindergarten/")) }}
+        {{- $active := or ($current.IsMenuCurrent "main" .) (eq $current.RelPermalink .URL) (and (eq .Page (site.GetPage "/services")) (eq $current (site.GetPage "/puppy-kindergarten"))) }}
         <li><a href="{{ .URL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
         {{- end }}
       </ul>

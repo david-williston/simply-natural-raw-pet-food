@@ -91,6 +91,21 @@
 </section>
 
 <section class="section">
+  <div class="wrap">
+    <h2>Our pet community</h2>
+    <div class="photo-row">
+      {{- range slice
+        (dict "src" "hero-woman-dog.jpg" "alt" "A woman embracing her dog")
+        (dict "src" "hero-woman-dog-2.jpg" "alt" "A woman cuddling her dog")
+        (dict "src" "hero-boxers.jpg" "alt" "Two boxer dogs looking up together")
+        (dict "src" "hero-white-dog.jpg" "alt" "A white dog looking at the camera") }}
+      <figure>{{ partial "img.html" (dict "src" .src "alt" .alt "sizes" "(min-width: 900px) 360px, 100vw") }}</figure>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="wrap split split-reverse">
     <div>
       <p class="eyebrow">More than a pet food store</p>

@@ -12,6 +12,22 @@ hugo server
 
 Then open http://localhost:1313. Build for production with `hugo --gc --minify` (output in `public/`).
 
+## Deployment
+
+The site is published at https://david-williston.github.io/simply-natural-raw-pet-food/.
+Pushing to `main` runs `.github/workflows/pages.yaml`, which installs Hugo Extended
+0.163.1, checks out the PaperMod submodule, and builds and deploys GitHub Pages.
+The workflow uses the Pages URL for links, assets, search and canonical URLs.
+
+The original custom domain is not changed by this deployment. When moving that
+domain, update the Pages custom-domain settings and DNS separately.
+
+The original flyer URL is retained under `static/_files/ugd/` for existing links.
+When replacing `static/files/holiday-sale.pdf`, update that compatibility copy too.
+
+See [the migration audit](WEBSITE_AUDIT.md) for the original-site comparison and
+remaining form integration work.
+
 ## Where things live
 
 | What | Where |

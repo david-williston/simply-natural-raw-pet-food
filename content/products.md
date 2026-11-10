@@ -74,6 +74,8 @@ We offer many high-quality, raw-compatible treats. Reward your pets with a treat
 
 {{< photos "store/treats.jpg|A wall of natural pet treats in the store" "products-3.jpg|Three bags of Open Farm dry food" >}}
 
+{{< photos "products-4.jpg|A dog sitting beside bags of Brownie's treats" "products-5.jpg|A package of dried fish skin treats" >}}
+
 ## Supplements {#supplements}
 
 Vitamins and minerals are an integral part of a healthy diet for your family — so why leave your fur-buddies without them? Dietary supplements are essential for your pet's health, and we can help you choose the best fit from our many brands.

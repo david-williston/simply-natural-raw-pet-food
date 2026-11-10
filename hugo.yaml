@@ -1,4 +1,4 @@
-baseURL: https://www.simplynaturalrawpet.ca/
+baseURL: https://david-williston.github.io/simply-natural-raw-pet-food/
 locale: en-ca
 title: Simply Natural Raw Pet Food
 theme: PaperMod
@@ -27,11 +27,11 @@ params:
   disableScrollToTop: false
 
   assets:
-    favicon: /favicon.svg
-    favicon16x16: /favicon.svg
-    favicon32x32: /favicon.svg
-    apple_touch_icon: /favicon.svg
-    safari_pinned_tab: /favicon.svg
+    favicon: favicon.svg
+    favicon16x16: favicon.svg
+    favicon32x32: favicon.svg
+    apple_touch_icon: favicon.svg
+    safari_pinned_tab: favicon.svg
     theme_color: "#759044"
 
   # ---- Business details (used by header, footer, contact page, structured data)
@@ -53,7 +53,7 @@ params:
       - { label: Monday – Friday, days: [1, 2, 3, 4, 5], open: "10:00", close: "20:00", text: 10 AM – 8 PM }
       - { label: Saturday, days: [6], open: "10:00", close: "19:00", text: 10 AM – 7 PM }
       - { label: Sunday, days: [0], open: "10:00", close: "18:00", text: 10 AM – 6 PM }
-    holidayHours: "Statutory holidays: 10 AM – 5 PM"
+    holidayHours: "Statutory holidays (Monday – Friday): 10 AM – 5 PM"
     payments: [Cash, Interac, Visa, Mastercard, American Express]
 
   # ---- Announcement bar. Set enabled: false to hide it.
