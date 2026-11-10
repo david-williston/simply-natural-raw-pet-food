@@ -476,14 +476,14 @@ bdi { unicode-bidi: isolate; }
 :lang(fa) .prose { line-height: 1.95; }
 :lang(zh) h1, :lang(zh) h2, :lang(ja) h1, :lang(ja) h2, :lang(ko) h1, :lang(ko) h2 { line-height: 1.45; }
 
-/* One brief paw-print trail, outside the page flow and clear of controls. */
-.paw-trail { position: fixed; inset-inline: 0; bottom: 6px; height: 76px; overflow: hidden; pointer-events: none; z-index: 30; contain: layout paint; }
-.paw-step { position: absolute; width: 42px; height: 35px; opacity: 0; transform-origin: center; animation: paw-contact 1.8s ease-out both; }
-.paw-step img { width: 42px; height: 35px; display: block; border-radius: 0; }
+/* A brief, occasional paw-print trail, outside page flow and clear of controls. */
+.paw-trail { position: fixed; inset-inline: 0; bottom: 8px; height: 96px; overflow: hidden; pointer-events: none; z-index: 30; contain: layout paint; }
+.paw-step { position: absolute; width: 56px; height: 47px; opacity: 0; transform-origin: center; animation: paw-contact 2.8s ease-out both; }
+.paw-step img { width: 56px; height: 47px; display: block; border-radius: 0; filter: drop-shadow(0 1px 2px #ffffffb3); }
 @keyframes paw-contact {
   0% { opacity: 0; transform: translateX(-50%) rotate(var(--paw-turn)) scale(.72, .86); }
-  18% { opacity: .28; transform: translateX(-50%) rotate(var(--paw-turn)) scale(1.05, .98); }
-  32%, 62% { opacity: .24; transform: translateX(-50%) rotate(var(--paw-turn)) scale(1); }
+  18% { opacity: .72; transform: translateX(-50%) rotate(var(--paw-turn)) scale(1.05, .98); }
+  32%, 68% { opacity: .65; transform: translateX(-50%) rotate(var(--paw-turn)) scale(1); }
   100% { opacity: 0; transform: translateX(-50%) rotate(var(--paw-turn)) scale(.95); }
 }
 .developer-credit { display: inline-flex; gap: 12px; align-items: center; max-width: 100%; }
