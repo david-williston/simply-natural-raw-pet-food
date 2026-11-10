@@ -31,6 +31,11 @@ English content lives in `content/*.md`; translations use matching names such as
 between versions. Shared text, including homepage copy, is in `i18n/<language>.json`.
 The business name, brands, address, phone and email remain unchanged.
 
+The header uses the paw-against-glass animation in `assets/images/logo-animated.svg`.
+Its blank demo margins are cropped to preserve the original logo's header size.
+The animation is self-contained and shared across languages. Visitors who prefer
+reduced motion, and browsers without SVG support, receive `assets/images/logo.jpg`.
+
 Search uses an index for the current language, and result cards show excerpts
 around matching text with highlighted terms. No external translation or search
 service is required. The original sale flyer is an English PDF in every version.
