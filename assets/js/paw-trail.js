@@ -75,7 +75,10 @@
     const route = createRoute();
     if (!route) { later(play, 20000); return; }
     const steps = Math.min(20, Math.max(5, Math.round(route.length / (route.height * 1.8))));
-    const cadence = 150 + Math.random() * 35;
+    // Quick pairs, a little hesitation, then another scamper.
+    const beats = [120, 310, 105, 450, 135, 260];
+    const printLifetime = 4800;
+    let landingAt = 0;
     for (let step = 0; step < steps; step++) {
       later(() => {
         if (document.hidden || reducedMotion.matches) return;
@@ -87,6 +90,7 @@
         print.style.top = `${point.y + Math.cos(point.heading) * side}px`;
         print.style.setProperty('--paw-width', `${point.width}px`);
         print.style.setProperty('--paw-height', `${point.height}px`);
+        print.style.setProperty('--paw-duration', `${printLifetime}ms`);
         print.style.setProperty('--paw-turn', `${point.heading * 180 / Math.PI + 90 + (step % 2 ? 8 : -8)}deg`);
         const image = document.createElement('img');
         image.src = trail.dataset.pawSrc; image.alt = '';
@@ -94,11 +98,12 @@
         image.style.transform = step % 2 ? 'none' : 'scaleX(-1)';
         print.append(image); trail.append(print); updateTone(print);
         print.addEventListener('animationend', () => print.remove(), { once: true });
-        later(() => print.remove(), 2500);
-      }, step * cadence);
+        later(() => print.remove(), printLifetime + 300);
+      }, landingAt);
+      landingAt += beats[step % beats.length] * (.9 + Math.random() * .2);
     }
     // The final print is in the header itself, at the original paw's exact size.
-    later(land, steps * cadence);
+    later(land, landingAt + 100);
     later(play, 20000);
   };
   const start = delay => {

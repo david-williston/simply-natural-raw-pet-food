@@ -37,6 +37,8 @@ and the final paw lands in the header, completing the logo and staying there.
 Each footprint is sized from the actual displayed logo's paw crop, including on
 mobile, with widely spaced strides. The logo sits on the right and the mobile
 menu on the left in all languages. The artwork comes from the original logo and its glass-press animation.
+The steps use quick pairs and short pauses; each print lingers for 4.8 seconds,
+with a slow fade after its initial hold.
 The completed logo remains visible during later footprint passes every 20 seconds.
 
 The effect is shared across languages, does not intercept clicks, and pauses in

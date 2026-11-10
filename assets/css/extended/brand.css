@@ -479,14 +479,14 @@ bdi { unicode-bidi: isolate; }
 
 /* A brief, occasional paw-print trail, outside page flow and clear of controls. */
 .paw-trail { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 30; contain: layout paint; }
-.paw-step { --paw-opacity: .65; position: absolute; width: var(--paw-width); height: var(--paw-height); opacity: 0; transform-origin: center; animation: paw-contact 2.2s ease-out both; }
+.paw-step { --paw-opacity: .65; position: absolute; width: var(--paw-width); height: var(--paw-height); opacity: 0; transform-origin: center; animation: paw-contact var(--paw-duration, 4.8s) ease-out both; }
 .paw-step img { width: 100%; height: 100%; display: block; border-radius: 0; }
 .paw-step.on-dark { --paw-opacity: .38; }
 .paw-step.on-dark img { filter: brightness(0) invert(1) sepia(.25); }
 @keyframes paw-contact {
   0% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(.72, .86); }
-  18% { opacity: var(--paw-opacity); transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(1.05, .98); }
-  32%, 68% { opacity: var(--paw-opacity); transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(1); }
+  8% { opacity: var(--paw-opacity); transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(1.05, .98); }
+  16%, 36% { opacity: var(--paw-opacity); transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(1); }
   100% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(.95); }
 }
 .logo-paw { position: absolute; left: 22.3577235772%; top: -1.25%; width: 52.8455284553%; height: 67.5%; pointer-events: none; }
