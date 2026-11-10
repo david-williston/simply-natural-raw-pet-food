@@ -1,15 +1,15 @@
 {{- $b := site.Params.business -}}
 {{- $action := site.Params.contactFormAction -}}
-<form class="contact-form" {{ if $action }}action="{{ $action }}" method="post"{{ else }}data-mailto="{{ $b.email }}"{{ end }}>
-  <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
+<form class="contact-form" data-subject="{{ i18n "form_subject" }}" {{ if $action }}action="{{ $action }}" method="post"{{ else }}data-mailto="{{ $b.email }}"{{ end }}>
+  <div class="field"><label for="cf-name">{{ i18n "name" }}</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
   <div class="field-row">
-    <div class="field"><label for="cf-phone">Phone number</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel" required></div>
-    <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+    <div class="field"><label for="cf-phone">{{ i18n "phone_number" }}</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel" required></div>
+    <div class="field"><label for="cf-email">{{ i18n "email" }}</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
   </div>
-  <div class="field"><label for="cf-message">How can we help?</label><textarea id="cf-message" name="message" rows="6" required placeholder="Tell us about your pet — species, age, and what you’re looking for."></textarea></div>
-  <button class="btn btn-primary" type="submit">{{ if $action }}Send message{{ else }}Open email draft{{ end }}</button>
-  {{ if not $action }}<p class="form-note">This opens a draft in your email app. Send the email from there to contact us. You can also email <a href="mailto:{{ $b.email }}">{{ $b.email }}</a> directly.</p>{{ end }}
-  <p class="form-note">We’ll get back to you as quickly as we can. For anything urgent, call <a href="tel:{{ replace $b.phone "-" "" }}">{{ $b.phone }}</a>.</p>
+  <div class="field"><label for="cf-message">{{ i18n "how_can_we_help" }}</label><textarea id="cf-message" name="message" rows="6" required placeholder="{{ i18n "tell_us_about_your_pet_species_age_and_what_you_re_looking_for" }}"></textarea></div>
+  <button class="btn btn-primary" type="submit">{{ if $action }}{{ i18n "send_message" }}{{ else }}{{ i18n "open_email_draft" }}{{ end }}</button>
+  {{ if not $action }}<p class="form-note">{{ i18n "this_opens_a_draft_in_your_email_app_send_the_email_from_there_to" }} <a href="mailto:{{ $b.email }}"><bdi dir="ltr">{{ $b.email }}</bdi></a> {{ i18n "directly" }}</p>{{ end }}
+  <p class="form-note">{{ i18n "we_ll_get_back_to_you_as_quickly_as_we_can_for_anything_urgent_ca" }} <a href="tel:{{ replace $b.phone "-" "" }}"><bdi dir="ltr">{{ $b.phone }}</bdi></a>.</p>
 </form>
 {{- if not $action }}
 <script>
@@ -17,7 +17,7 @@ document.querySelector('.contact-form[data-mailto]').addEventListener('submit', 
   e.preventDefault();
   var f = e.target, v = function (n) { return f.elements[n].value.trim(); };
   var body = v('message') + '\n\n' + v('name') + '\n' + v('phone') + '\n' + v('email');
-  location.href = 'mailto:' + f.dataset.mailto + '?subject=' + encodeURIComponent('Website enquiry from ' + v('name')) + '&body=' + encodeURIComponent(body);
+  location.href = 'mailto:' + f.dataset.mailto + '?subject=' + encodeURIComponent(f.dataset.subject + ' ' + v('name')) + '&body=' + encodeURIComponent(body);
 });
 </script>
 {{- end }}

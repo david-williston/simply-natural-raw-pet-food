@@ -1,6 +1,5 @@
 ---
 title: Services
-url: /services/
 description: Custom meal plans, puppy training classes and pet food delivery from Simply Natural Raw Pet Food in Vancouver.
 lead: We're not just a pet food store. If you're looking for answers to a health or behaviour problem, call or stop by — we're always pleased to help.
 banner: banner-services.jpg

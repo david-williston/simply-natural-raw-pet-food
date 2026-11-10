@@ -1,5 +1,6 @@
 baseURL: https://david-williston.github.io/simply-natural-raw-pet-food/
-locale: en-ca
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 title: Simply Natural Raw Pet Food
 theme: PaperMod
 
@@ -76,14 +77,24 @@ params:
     minMatchCharLength: 2
     keys: [title, summary, content]
 
+languages:
+  en: { label: English, locale: en-CA, direction: ltr, weight: 1 }
+  zh-hans: { label: 简体中文, locale: zh-Hans, direction: ltr, weight: 2, hasCJKLanguage: true }
+  zh-hant: { label: 繁體中文, locale: zh-Hant, direction: ltr, weight: 3, hasCJKLanguage: true }
+  ko: { label: 한국어, locale: ko-KR, direction: ltr, weight: 4, hasCJKLanguage: true }
+  ja: { label: 日本語, locale: ja-JP, direction: ltr, weight: 5, hasCJKLanguage: true }
+  fr: { label: Français, locale: fr-CA, direction: ltr, weight: 6 }
+  fa: { label: فارسی, locale: fa-IR, direction: rtl, weight: 7 }
+  pt-br: { label: Português, locale: pt-BR, direction: ltr, weight: 8 }
+
 menus:
   main:
-    - { name: About, pageRef: /about-us, weight: 10 }
-    - { name: Products, pageRef: /products, weight: 20 }
-    - { name: Raw Feeding, pageRef: /nutrition, weight: 30 }
-    - { name: Services, pageRef: /services, weight: 40 }
-    - { name: Delivery, pageRef: /deliveries, weight: 50 }
-    - { name: Contact, pageRef: /contact-us, weight: 60 }
+    - { name: About, identifier: about, pageRef: /about-us, weight: 10 }
+    - { name: Products, identifier: products, pageRef: /products, weight: 20 }
+    - { name: Raw Feeding, identifier: nutrition, pageRef: /nutrition, weight: 30 }
+    - { name: Services, identifier: services, pageRef: /services, weight: 40 }
+    - { name: Delivery, identifier: deliveries, pageRef: /deliveries, weight: 50 }
+    - { name: Contact, identifier: contact, pageRef: /contact-us, weight: 60 }
 
 markup:
   goldmark:

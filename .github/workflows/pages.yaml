@@ -39,6 +39,8 @@ jobs:
         env:
           HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
         run: hugo --gc --minify --cacheDir "${RUNNER_TEMP}/hugo-cache"
+      - name: Check translated pages and links
+        run: python3 scripts/check-site.py public
       - name: Upload site
         uses: actions/upload-pages-artifact@v5
         with:

@@ -1,7 +1,6 @@
 ---
 title: Dog & Cat Food, Treats and Supplements
 linkTitle: Products
-url: /products/
 description: Raw, dry and canned food for dogs and cats, plus treats and supplements, from trusted brands — at Simply Natural Raw Pet Food in Vancouver.
 lead: Nutritious food from brands we trust, for every dietary need and preference. If you don't see what you're after, ask — special orders are welcome.
 banner: banner-products.jpg

@@ -3,8 +3,8 @@
 {{- $tel := replace $b.phone "-" "" -}}
 <section class="page-head">
   <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="{{ "" | relLangURL }}">Home</a>
+    <nav class="crumbs" aria-label="{{ i18n "breadcrumb" }}">
+      <a href="{{ "" | relLangURL }}">{{ i18n "home" }}</a>
       {{- with .Params.parent }}{{ with site.GetPage . }} <span>/</span> <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}{{ end }}
       <span>/</span> <span aria-current="page">{{ .LinkTitle }}</span>
     </nav>
@@ -26,15 +26,15 @@
   {{- if ne .Params.sidebar false }}
   <aside class="sidebar">
     <div class="visit-card">
-      <h3>Visit the shop</h3>
-      <p class="open-status pill" data-open-status><span class="dot"></span><span data-open-text>Open 7 days a week</span></p>
+      <h3>{{ i18n "visit_the_shop" }}</h3>
+      <p class="open-status pill" data-open-status><span class="dot"></span><span data-open-text>{{ i18n "open_7_days_a_week" }}</span></p>
       <ul class="contact-list">
         <li>{{ partial "icon.html" "pin" }}<a href="{{ $b.mapsLink }}" target="_blank" rel="noopener">{{ $b.street }}<br>{{ $b.city }}, {{ $b.region }} {{ $b.postal }}</a></li>
-        <li>{{ partial "icon.html" "phone" }}<a href="tel:{{ $tel }}">{{ $b.phone }}</a></li>
-        <li>{{ partial "icon.html" "mail" }}<a href="mailto:{{ $b.email }}">{{ $b.email }}</a></li>
+        <li>{{ partial "icon.html" "phone" }}<a href="tel:{{ $tel }}"><bdi dir="ltr">{{ $b.phone }}</bdi></a></li>
+        <li>{{ partial "icon.html" "mail" }}<a href="mailto:{{ $b.email }}"><bdi dir="ltr">{{ $b.email }}</bdi></a></li>
       </ul>
       {{ partial "hours.html" . }}
-      <a class="btn btn-primary btn-block" href="{{ "contact-us/" | relURL }}">Ask us a question</a>
+      <a class="btn btn-primary btn-block" href="{{ "contact-us/" | relLangURL }}">{{ i18n "ask_us_a_question" }}</a>
     </div>
   </aside>
   {{- end }}

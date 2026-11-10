@@ -1,7 +1,6 @@
 ---
 title: Raw Feeding & Nutrition
 linkTitle: Raw Feeding
-url: /nutrition/
 description: Why a species-appropriate raw diet helps dogs and cats thrive, what goes into raw pet food, and how to transition your pet safely.
 lead: Why a species-appropriate diet helps dogs and cats thrive — and how to get started.
 banner: banner-nutrition.jpg

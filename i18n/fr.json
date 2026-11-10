@@ -1,0 +1,482 @@
+{
+  "visit_heading": {
+    "other": "Retrouvez-nous sur West Boulevard à {{ .Neighbourhood }}"
+  },
+  "vancouver": {
+    "other": ", Vancouver"
+  },
+  "real_food_for_the_furry_members_of_your_family": {
+    "other": "De vrais aliments pour les membres à quatre pattes de votre famille"
+  },
+  "frozen_raw_diets_carefully_chosen_dry_and_canned_food_supplements": {
+    "other": "Repas crus surgelés, aliments secs et en conserve soigneusement choisis, suppléments et gâteries — avec les conseils chaleureux d’une équipe qui connaît la nutrition animale."
+  },
+  "see_what_we_carry": {
+    "other": "Découvrir nos produits"
+  },
+  "visit_the_shop": {
+    "other": "Visiter la boutique"
+  },
+  "raw_natural_food": {
+    "other": "Aliments crus et naturels"
+  },
+  "free_range_non_medicated_meats": {
+    "other": "Viandes d’animaux élevés en liberté, sans médicaments"
+  },
+  "custom_meal_plans": {
+    "other": "Plans alimentaires personnalisés"
+  },
+  "for_allergies_aging_and_more": {
+    "other": "Pour les allergies, le vieillissement et plus encore"
+  },
+  "local_delivery": {
+    "other": "Livraison locale"
+  },
+  "to_your_door_in_vancouver": {
+    "other": "À votre porte à Vancouver"
+  },
+  "puppy_kindergarten": {
+    "other": "Maternelle pour chiots"
+  },
+  "six_week_positive_training": {
+    "other": "Six semaines d’éducation positive"
+  },
+  "why_feed_raw": {
+    "other": "Pourquoi choisir le cru"
+  },
+  "a_species_appropriate_diet_and_a_pet_that_shows_it": {
+    "other": "Une alimentation adaptée à l’espèce, et un animal qui en profite"
+  },
+  "do_you_have_doubts_about_what_to_feed_your_pet_every_member_of_yo": {
+    "other": "Vous hésitez sur ce qu’il faut donner à votre animal? Chaque membre de votre famille, même à quatre pattes, mérite des aliments nourrissants, sains et naturels. Nous ne proposons que les meilleurs aliments crus, fabriqués par des fournisseurs de confiance, et notre équipe vous guide vers le bon choix pour votre compagnon."
+  },
+  "dogs_and_cats_are_built_to_thrive_on_fresh_unprocessed_food_raw_d": {
+    "other": "Chiens et chats sont faits pour s’épanouir avec des aliments frais et peu transformés. Les régimes crus préservent les enzymes et les nutriments éliminés par une transformation poussée, sans ingrédients de remplissage, agents de conservation ni excès de glucides."
+  },
+  "pet_parents_who_switch_tell_us_they_notice": {
+    "other": "Les propriétaires qui passent au cru nous parlent de ces changements :"
+  },
+  "and_the_satisfaction_of_knowing_exactly_what_your_pet_is_eating": {
+    "other": "…et de la satisfaction de savoir exactement ce que mange leur animal."
+  },
+  "read_our_raw_feeding_guide": {
+    "other": "Lire notre guide de l’alimentation crue"
+  },
+  "in_the_shop": {
+    "other": "À la boutique"
+  },
+  "everything_a_naturally_fed_pet_needs": {
+    "other": "Tout ce qu’il faut pour une alimentation naturelle"
+  },
+  "alongside_raw_food_we_carry_a_small_selection_of_the_highest_qual": {
+    "other": "En complément du cru, nous proposons une petite sélection d’aliments pratiques de très grande qualité : aliments déshydratés, lyophilisés et certaines marques de croquettes. Les commandes spéciales sont toujours les bienvenues."
+  },
+  "browse_brands_we_carry": {
+    "other": "Voir les marques disponibles"
+  },
+  "stay_up_to_date_on_new_products_by_connecting_with_us_on": {
+    "other": "Pour connaître nos nouveaux produits, suivez-nous sur"
+  },
+  "facebook": {
+    "other": "Facebook"
+  },
+  "new_to_raw": {
+    "other": "Vous découvrez le cru?"
+  },
+  "switching_is_simpler_than_you_think": {
+    "other": "La transition est plus simple que vous ne le pensez"
+  },
+  "start_hungry": {
+    "other": "Commencez avec de l’appétit"
+  },
+  "a_half_day_or_full_day_fast_before_the_first_raw_meal_makes_sure": {
+    "other": "Un jeûne d’une demi-journée ou d’une journée avant le premier repas cru aide votre animal à avoir bon appétit."
+  },
+  "go_small": {
+    "other": "Commencez par de petites portions"
+  },
+  "offer_a_smaller_portion_at_first_and_watch_how_they_handle_the_fr": {
+    "other": "Proposez d’abord une petite portion et observez comment votre animal réagit à ces aliments frais."
+  },
+  "swap_gradually": {
+    "other": "Remplacez progressivement"
+  },
+  "replace_a_little_more_of_the_old_food_with_raw_at_each_meal_adjus": {
+    "other": "Remplacez un peu plus de l’ancienne alimentation par du cru à chaque repas, en adaptant le rythme à la digestion de votre animal."
+  },
+  "full_transition_tips": {
+    "other": "Tous nos conseils de transition"
+  },
+  "our_pet_community": {
+    "other": "Nos compagnons du quartier"
+  },
+  "more_than_a_pet_food_store": {
+    "other": "Bien plus qu’une animalerie"
+  },
+  "meal_plans_puppy_classes_and_delivery": {
+    "other": "Plans alimentaires, cours pour chiots et livraison"
+  },
+  "what_goes_in_the_bowl_has_a_big_effect_on_health_if_your_dog_or_c": {
+    "other": "Le contenu de la gamelle a un effet important sur la santé. Si votre chien ou votre chat a un problème de santé, nous pouvons élaborer un plan alimentaire pour l’aider. Nous proposons des plans pour :"
+  },
+  "meal_plans": {
+    "other": "Plans alimentaires"
+  },
+  "built_around_your_pet_s_needs": {
+    "other": "Adaptés aux besoins de votre animal"
+  },
+  "for_puppies_9_24_weeks": {
+    "other": "Pour les chiots de 9 à 24 semaines"
+  },
+  "delivery": {
+    "other": "Livraison"
+  },
+  "never_run_out_of_food": {
+    "other": "Ne manquez plus jamais de nourriture"
+  },
+  "visit_us": {
+    "other": "Venez nous voir"
+  },
+  "a_trusted_neighbourhood_source_for_over_a_decade_recommended_by_t": {
+    "other": "Une adresse de confiance dans le quartier depuis plus de dix ans, recommandée par des éducateurs, des maîtres-chiens policiers, des éleveurs, des organismes de sauvetage et des vétérinaires holistiques de tout le Lower Mainland."
+  },
+  "open_7_days_a_week": {
+    "other": "Ouvert 7 jours sur 7"
+  },
+  "ask_about_our_frequent_buyer_program": {
+    "other": "Renseignez-vous sur notre programme de fidélité."
+  },
+  "get_directions": {
+    "other": "Obtenir l’itinéraire"
+  },
+  "freezers_stocked_with_frozen_raw_pet_food_at_simply_natural": {
+    "other": "Des congélateurs remplis d’aliments crus surgelés chez Simply Natural"
+  },
+  "natural_instincts_frozen_raw_food_in_lamb_goat_and_turkey": {
+    "other": "Aliments crus surgelés Natural Instincts à l’agneau, à la chèvre et à la dinde"
+  },
+  "frozen_raw_diets": {
+    "other": "Repas crus surgelés"
+  },
+  "complete_raw_meals_and_raw_meaty_bones_for_dogs_and_cats": {
+    "other": "Repas crus complets et os charnus crus pour chiens et chats."
+  },
+  "shelves_of_dry_food_and_accessories_inside_the_store": {
+    "other": "Des étagères d’aliments secs et d’accessoires dans la boutique"
+  },
+  "dry_canned_freeze_dried": {
+    "other": "Sec, en conserve et lyophilisé"
+  },
+  "a_small_select_range_of_the_best_convenience_foods": {
+    "other": "Une sélection des meilleurs aliments pratiques."
+  },
+  "pet_supplements_including_omega_oils_and_probiotics": {
+    "other": "Des suppléments pour animaux, dont des huiles oméga et des probiotiques"
+  },
+  "supplements": {
+    "other": "Suppléments"
+  },
+  "omega_oils_probiotics_and_targeted_support": {
+    "other": "Huiles oméga, probiotiques et soutien ciblé."
+  },
+  "wall_of_natural_pet_treats": {
+    "other": "Un mur de gâteries naturelles pour animaux"
+  },
+  "treats_toys_gear": {
+    "other": "Gâteries, jouets et accessoires"
+  },
+  "raw_compatible_treats_training_supplies_and_accessories": {
+    "other": "Gâteries compatibles avec le cru, matériel d’éducation et accessoires."
+  },
+  "a_little_girl_hugging_her_dog_on_the_floor": {
+    "other": "Une fillette serrant son chien dans ses bras sur le sol"
+  },
+  "a_woman_embracing_her_dog": {
+    "other": "Une femme serrant son chien dans ses bras"
+  },
+  "a_woman_cuddling_her_dog": {
+    "other": "Une femme câlinant son chien"
+  },
+  "two_boxer_dogs_looking_up_together": {
+    "other": "Deux boxers regardant ensemble vers le haut"
+  },
+  "a_white_dog_looking_at_the_camera": {
+    "other": "Un chien blanc regardant l’appareil photo"
+  },
+  "a_puppy_rolling_on_the_grass": {
+    "other": "Un chiot se roulant dans l’herbe"
+  },
+  "simply_natural_raw_pet_food_storefront_on_west_boulevard": {
+    "other": "La devanture de Simply Natural Raw Pet Food sur West Boulevard"
+  },
+  "inside_the_store": {
+    "other": "L’intérieur de la boutique"
+  },
+  "improved_digestion": {
+    "other": "Une meilleure digestion"
+  },
+  "clean_teeth": {
+    "other": "Des dents propres"
+  },
+  "strong_nails": {
+    "other": "Des griffes solides"
+  },
+  "healthy_ears": {
+    "other": "Des oreilles saines"
+  },
+  "a_stronger_immune_system": {
+    "other": "Un système immunitaire plus fort"
+  },
+  "increased_resistance_to_disease_and_parasites": {
+    "other": "Une meilleure résistance aux maladies et aux parasites"
+  },
+  "healthy_skin_and_coat": {
+    "other": "Une peau et un pelage sains"
+  },
+  "no_more_foul_body_odour_or_bad_breath": {
+    "other": "Fini les mauvaises odeurs corporelles et la mauvaise haleine"
+  },
+  "allergies": {
+    "other": "Allergies"
+  },
+  "cancer": {
+    "other": "Cancer"
+  },
+  "renal_conditions": {
+    "other": "Affections rénales"
+  },
+  "liver_conditions": {
+    "other": "Affections hépatiques"
+  },
+  "digestive_problems": {
+    "other": "Troubles digestifs"
+  },
+  "aging": {
+    "other": "Vieillissement"
+  },
+  "skip_to_content": {
+    "other": "Aller au contenu"
+  },
+  "search": {
+    "other": "Recherche"
+  },
+  "call": {
+    "other": "Appeler"
+  },
+  "menu": {
+    "other": "Menu"
+  },
+  "main": {
+    "other": "Navigation principale"
+  },
+  "search_alt": {
+    "other": "Recherche (Alt + /)"
+  },
+  "our_holiday_sale_is_on": {
+    "other": "Notre vente des Fêtes est en cours."
+  },
+  "see_the_flyer": {
+    "other": "Voir la circulaire"
+  },
+  "raw_natural_food_and_honest_advice_for_dogs_and_cats_a": {
+    "other": "Aliments crus et naturels et conseils honnêtes pour chiens et chats — une boutique de quartier à"
+  },
+  "neighbourhood_shop": {
+    "other": "au cœur du quartier."
+  },
+  "follow_us_on_facebook": {
+    "other": "Suivez-nous sur Facebook"
+  },
+  "visit": {
+    "other": "Visite"
+  },
+  "hours": {
+    "other": "Horaires"
+  },
+  "explore": {
+    "other": "Découvrir"
+  },
+  "built_with": {
+    "other": "Réalisé avec"
+  },
+  "not_sure_what_to_feed": {
+    "other": "Vous ne savez pas quoi donner à manger?"
+  },
+  "tell_us_about_your_dog_or_cat_and_we_ll_help_you_choose_in_store": {
+    "other": "Parlez-nous de votre chien ou de votre chat et nous vous aiderons à choisir, en magasin, par téléphone ou par courriel."
+  },
+  "send_a_message": {
+    "other": "Envoyer un message"
+  },
+  "home": {
+    "other": "Accueil"
+  },
+  "ask_us_a_question": {
+    "other": "Posez-nous une question"
+  },
+  "breadcrumb": {
+    "other": "Fil d’Ariane"
+  },
+  "methods_of_payment": {
+    "other": "Modes de paiement"
+  },
+  "name": {
+    "other": "Nom"
+  },
+  "phone_number": {
+    "other": "Numéro de téléphone"
+  },
+  "email": {
+    "other": "Courriel"
+  },
+  "how_can_we_help": {
+    "other": "Comment pouvons-nous vous aider?"
+  },
+  "send_message": {
+    "other": "Envoyer le message"
+  },
+  "open_email_draft": {
+    "other": "Ouvrir un brouillon de courriel"
+  },
+  "this_opens_a_draft_in_your_email_app_send_the_email_from_there_to": {
+    "other": "Un brouillon s’ouvrira dans votre application de courriel. Envoyez-le depuis celle-ci pour nous joindre. Vous pouvez aussi écrire à"
+  },
+  "directly": {
+    "other": "directement."
+  },
+  "we_ll_get_back_to_you_as_quickly_as_we_can_for_anything_urgent_ca": {
+    "other": "Nous vous répondrons dès que possible. En cas d’urgence, appelez le"
+  },
+  "tell_us_about_your_pet_species_age_and_what_you_re_looking_for": {
+    "other": "Parlez-nous de votre animal : espèce, âge et ce que vous recherchez."
+  },
+  "map_showing": {
+    "other": "Carte indiquant"
+  },
+  "about": {
+    "other": "À propos"
+  },
+  "products": {
+    "other": "Produits"
+  },
+  "nutrition": {
+    "other": "Alimentation crue"
+  },
+  "services": {
+    "other": "Services"
+  },
+  "deliveries": {
+    "other": "Livraison"
+  },
+  "contact": {
+    "other": "Contact"
+  },
+  "language": {
+    "other": "Langue"
+  },
+  "search_intro": {
+    "other": "Vous cherchez une marque, un produit ou des conseils alimentaires? Commencez à saisir votre recherche."
+  },
+  "search_empty": {
+    "other": "Aucun résultat. Essayez une marque comme « Acana » ou un sujet comme « livraison » ou « suppléments »."
+  },
+  "search_error": {
+    "other": "La recherche n’a pas pu se charger. Rechargez la page ou parcourez le menu."
+  },
+  "search_results": {
+    "other": "Résultats de recherche"
+  },
+  "popular": {
+    "other": "Recherches populaires :"
+  },
+  "search_raw_dog": {
+    "other": "Aliments crus pour chiens"
+  },
+  "search_cat": {
+    "other": "Aliments pour chats"
+  },
+  "search_supplements": {
+    "other": "Suppléments"
+  },
+  "search_treats": {
+    "other": "Gâteries"
+  },
+  "search_meals": {
+    "other": "Plans alimentaires"
+  },
+  "search_delivery": {
+    "other": "Livraison"
+  },
+  "search_puppy": {
+    "other": "Chiot"
+  },
+  "search_hours": {
+    "other": "Horaires"
+  },
+  "hours_location": {
+    "other": "Horaires et adresse"
+  },
+  "hours_weekdays": {
+    "other": "Du lundi au vendredi"
+  },
+  "hours_saturday": {
+    "other": "Samedi"
+  },
+  "hours_sunday": {
+    "other": "Dimanche"
+  },
+  "hours_holidays": {
+    "other": "Jours fériés (du lundi au vendredi) : de 10 h à 17 h"
+  },
+  "cash": {
+    "other": "Espèces"
+  },
+  "regular_hours": {
+    "other": "Horaires hebdomadaires habituels; les horaires des jours fériés peuvent varier."
+  },
+  "open_until": {
+    "other": "Ouvert maintenant · jusqu’à {{ .Time }}"
+  },
+  "opens_today": {
+    "other": "Ouverture aujourd’hui à {{ .Time }}"
+  },
+  "opens_tomorrow": {
+    "other": "Fermé · ouverture demain à {{ .Time }}"
+  },
+  "closed": {
+    "other": "Fermé"
+  },
+  "form_send": {
+    "other": "Envoyer le message"
+  },
+  "form_draft": {
+    "other": "Ouvrir un brouillon de courriel"
+  },
+  "form_email_before": {
+    "other": "Un brouillon s’ouvrira dans votre application de courriel. Envoyez-le depuis celle-ci pour nous joindre. Vous pouvez aussi écrire à"
+  },
+  "form_email_after": {
+    "other": "directement."
+  },
+  "form_urgent": {
+    "other": "Nous vous répondrons dès que possible. En cas d’urgence, appelez le"
+  },
+  "form_subject": {
+    "other": "Demande depuis le site de"
+  },
+  "flyer_note": {
+    "other": "Circulaire de vente (PDF en anglais)"
+  },
+  "footer_description": {
+    "other": "Aliments crus et naturels et conseils honnêtes pour chiens et chats — une boutique de quartier à Kerrisdale."
+  },
+  "not_found": {
+    "other": "Page introuvable"
+  },
+  "not_found_body": {
+    "other": "La page recherchée est introuvable. Parcourez le menu ou revenez à l’accueil."
+  },
+  "back_home": {
+    "other": "Retour à l’accueil"
+  }
+}

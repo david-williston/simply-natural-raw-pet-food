@@ -1,6 +1,5 @@
 ---
 title: Puppy Kindergarten
-url: /puppy-kindergarten/
 parent: /services
 description: A six-week puppy training class in Vancouver for puppies 9 to 24 weeks old, using positive reinforcement and motivational techniques.
 lead: Prevent problems before they happen — and learn effective solutions for when they do.

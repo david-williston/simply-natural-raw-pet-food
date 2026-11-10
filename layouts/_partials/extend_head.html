@@ -9,7 +9,8 @@
   "@context" "https://schema.org"
   "@type" "PetStore"
   "name" site.Title
-  "url" site.BaseURL
+  "url" site.Home.Permalink
+  "inLanguage" site.Language.Lang
   "telephone" (printf "+1-%s" $b.phone)
   "email" $b.email
   "image" ((resources.Get "images/store/storefront.jpg").Permalink)
@@ -20,3 +21,6 @@
   "sameAs" (slice $b.facebook)
 -}}
 <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{- range .AllTranslations }}{{ if eq .Language.Lang "en" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}{{ end }}

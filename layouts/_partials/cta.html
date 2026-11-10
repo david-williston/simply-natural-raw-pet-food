@@ -4,12 +4,12 @@
   <canvas id="bg-fish" aria-hidden="true"></canvas>
   <div class="wrap cta-band-inner">
     <div>
-      <h2>Not sure what to feed?</h2>
-      <p>Tell us about your dog or cat and we’ll help you choose — in store, by phone or by email.</p>
+      <h2>{{ i18n "not_sure_what_to_feed" }}</h2>
+      <p>{{ i18n "tell_us_about_your_dog_or_cat_and_we_ll_help_you_choose_in_store" }}</p>
     </div>
     <div class="btn-row">
-      <a class="btn btn-accent" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}Call {{ $b.phone }}</a>
-      <a class="btn btn-ghost-light" href="{{ "contact-us/" | relURL }}">Send a message</a>
+      <a class="btn btn-accent" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}{{ i18n "call" }} {{ $b.phone }}</a>
+      <a class="btn btn-ghost-light" href="{{ "contact-us/" | relLangURL }}">{{ i18n "send_a_message" }}</a>
     </div>
   </div>
 </section>

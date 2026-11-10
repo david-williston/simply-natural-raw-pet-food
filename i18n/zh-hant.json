@@ -1,0 +1,482 @@
+{
+  "visit_heading": {
+    "other": "歡迎到訪 {{ .Neighbourhood }} 的 West Boulevard 店鋪"
+  },
+  "vancouver": {
+    "other": "，溫哥華"
+  },
+  "real_food_for_the_furry_members_of_your_family": {
+    "other": "給毛孩子真正的天然好食物"
+  },
+  "frozen_raw_diets_carefully_chosen_dry_and_canned_food_supplements": {
+    "other": "冷凍生食、精選乾糧與罐頭、營養補充品和零食——還有熟悉寵物營養的團隊，爲您提供親切建議。"
+  },
+  "see_what_we_carry": {
+    "other": "看看我們有哪些產品"
+  },
+  "visit_the_shop": {
+    "other": "到店看看"
+  },
+  "raw_natural_food": {
+    "other": "天然生食"
+  },
+  "free_range_non_medicated_meats": {
+    "other": "自由放養、未用藥物飼養的肉類"
+  },
+  "custom_meal_plans": {
+    "other": "個性化餐食計劃"
+  },
+  "for_allergies_aging_and_more": {
+    "other": "針對過敏、年老等需求"
+  },
+  "local_delivery": {
+    "other": "本地配送"
+  },
+  "to_your_door_in_vancouver": {
+    "other": "送到溫哥華的家門口"
+  },
+  "puppy_kindergarten": {
+    "other": "幼犬幼兒園"
+  },
+  "six_week_positive_training": {
+    "other": "六週正向訓練課程"
+  },
+  "why_feed_raw": {
+    "other": "爲什麼選擇生食"
+  },
+  "a_species_appropriate_diet_and_a_pet_that_shows_it": {
+    "other": "符合物種天性的飲食，讓寵物展現健康活力"
+  },
+  "do_you_have_doubts_about_what_to_feed_your_pet_every_member_of_yo": {
+    "other": "還在猶豫該喂寵物什麼嗎？每位家庭成員——包括毛孩子——都值得享用營養、完整、天然的食物。我們只挑選可靠供應商製作的優質寵物生食，團隊也會引導您爲愛寵選擇合適食品。"
+  },
+  "dogs_and_cats_are_built_to_thrive_on_fresh_unprocessed_food_raw_d": {
+    "other": "犬貓天生適合新鮮、未經加工的食物。生食保留大量加工容易流失的酶與營養，也避免填充物、防腐劑和過量碳水化合物。"
+  },
+  "pet_parents_who_switch_tell_us_they_notice": {
+    "other": "轉換飲食的寵物主人告訴我們，他們注意到："
+  },
+  "and_the_satisfaction_of_knowing_exactly_what_your_pet_is_eating": {
+    "other": "……更能安心，因爲清楚知道寵物喫的是什麼。"
+  },
+  "read_our_raw_feeding_guide": {
+    "other": "閱讀生食餵養指南"
+  },
+  "in_the_shop": {
+    "other": "店內產品"
+  },
+  "everything_a_naturally_fed_pet_needs": {
+    "other": "天然餵養寵物所需的一切"
+  },
+  "alongside_raw_food_we_carry_a_small_selection_of_the_highest_qual": {
+    "other": "除了生食，我們還提供少量精選優質便利食品，包括脫水、凍乾和精選品牌乾糧。歡迎特別訂購。"
+  },
+  "browse_brands_we_carry": {
+    "other": "瀏覽店內品牌"
+  },
+  "stay_up_to_date_on_new_products_by_connecting_with_us_on": {
+    "other": "歡迎通過以下平臺關注我們，掌握新產品信息："
+  },
+  "facebook": {
+    "other": "Facebook"
+  },
+  "new_to_raw": {
+    "other": "剛開始接觸生食？"
+  },
+  "switching_is_simpler_than_you_think": {
+    "other": "轉換飲食比您想象的更簡單"
+  },
+  "start_hungry": {
+    "other": "先有好食慾"
+  },
+  "a_half_day_or_full_day_fast_before_the_first_raw_meal_makes_sure": {
+    "other": "第一餐生食前禁食半天或一天，有助於讓寵物帶着好食慾進餐。"
+  },
+  "go_small": {
+    "other": "從少量開始"
+  },
+  "offer_a_smaller_portion_at_first_and_watch_how_they_handle_the_fr": {
+    "other": "一開始先喂較小的分量，觀察寵物如何適應新鮮食品。"
+  },
+  "swap_gradually": {
+    "other": "逐步替換"
+  },
+  "replace_a_little_more_of_the_old_food_with_raw_at_each_meal_adjus": {
+    "other": "每餐逐步增加生食、減少原有食品，並根據寵物的消化情況調整進度。"
+  },
+  "full_transition_tips": {
+    "other": "完整飲食轉換建議"
+  },
+  "our_pet_community": {
+    "other": "我們的寵物社區"
+  },
+  "more_than_a_pet_food_store": {
+    "other": "不只是一家寵物食品店"
+  },
+  "meal_plans_puppy_classes_and_delivery": {
+    "other": "餐食計劃、幼犬課程與配送"
+  },
+  "what_goes_in_the_bowl_has_a_big_effect_on_health_if_your_dog_or_c": {
+    "other": "食碗裏的內容，對健康影響很大。如果狗狗或貓咪有健康問題，我們可以制定餐食計劃來協助。我們提供針對以下情況的計劃："
+  },
+  "meal_plans": {
+    "other": "餐食計劃"
+  },
+  "built_around_your_pet_s_needs": {
+    "other": "圍繞寵物的需求制定"
+  },
+  "for_puppies_9_24_weeks": {
+    "other": "適合 9–24 周齡幼犬"
+  },
+  "delivery": {
+    "other": "配送"
+  },
+  "never_run_out_of_food": {
+    "other": "不必擔心斷糧"
+  },
+  "visit_us": {
+    "other": "歡迎到訪"
+  },
+  "a_trusted_neighbourhood_source_for_over_a_decade_recommended_by_t": {
+    "other": "十多年來值得信賴的社區商店——獲低陸平原各地訓犬師、警犬訓導員、繁育者、動物救援組織和整體療法獸醫推薦。"
+  },
+  "open_7_days_a_week": {
+    "other": "每週七天營業"
+  },
+  "ask_about_our_frequent_buyer_program": {
+    "other": "歡迎諮詢常客購買優惠計劃。"
+  },
+  "get_directions": {
+    "other": "獲取路線"
+  },
+  "freezers_stocked_with_frozen_raw_pet_food_at_simply_natural": {
+    "other": "Simply Natural 店內裝滿冷凍寵物生食的冷櫃"
+  },
+  "natural_instincts_frozen_raw_food_in_lamb_goat_and_turkey": {
+    "other": "Natural Instincts 羊肉、山羊肉及火雞肉冷凍生食"
+  },
+  "frozen_raw_diets": {
+    "other": "冷凍生食"
+  },
+  "complete_raw_meals_and_raw_meaty_bones_for_dogs_and_cats": {
+    "other": "犬貓完整生食餐點和生肉骨。"
+  },
+  "shelves_of_dry_food_and_accessories_inside_the_store": {
+    "other": "店內擺放乾糧和用品的貨架"
+  },
+  "dry_canned_freeze_dried": {
+    "other": "乾糧、罐頭及凍幹"
+  },
+  "a_small_select_range_of_the_best_convenience_foods": {
+    "other": "少量精選的優質便利食品。"
+  },
+  "pet_supplements_including_omega_oils_and_probiotics": {
+    "other": "寵物營養補充品，包括 Omega 油和益生菌"
+  },
+  "supplements": {
+    "other": "營養補充品"
+  },
+  "omega_oils_probiotics_and_targeted_support": {
+    "other": "Omega 油、益生菌與針對性營養支持。"
+  },
+  "wall_of_natural_pet_treats": {
+    "other": "一整面天然寵物零食陳列牆"
+  },
+  "treats_toys_gear": {
+    "other": "零食、玩具與用品"
+  },
+  "raw_compatible_treats_training_supplies_and_accessories": {
+    "other": "適合搭配生食的零食、訓練用品和配件。"
+  },
+  "a_little_girl_hugging_her_dog_on_the_floor": {
+    "other": "一名小女孩在地板上擁抱她的狗"
+  },
+  "a_woman_embracing_her_dog": {
+    "other": "一名女子擁抱她的狗"
+  },
+  "a_woman_cuddling_her_dog": {
+    "other": "一名女子親暱地抱着她的狗"
+  },
+  "two_boxer_dogs_looking_up_together": {
+    "other": "兩隻拳師犬一起抬頭看"
+  },
+  "a_white_dog_looking_at_the_camera": {
+    "other": "一隻白色狗狗望向鏡頭"
+  },
+  "a_puppy_rolling_on_the_grass": {
+    "other": "一隻幼犬在草地上打滾"
+  },
+  "simply_natural_raw_pet_food_storefront_on_west_boulevard": {
+    "other": "Simply Natural Raw Pet Food 位於 West Boulevard 的店面"
+  },
+  "inside_the_store": {
+    "other": "店內環境"
+  },
+  "improved_digestion": {
+    "other": "改善消化"
+  },
+  "clean_teeth": {
+    "other": "潔淨牙齒"
+  },
+  "strong_nails": {
+    "other": "強健指甲"
+  },
+  "healthy_ears": {
+    "other": "健康耳朵"
+  },
+  "a_stronger_immune_system": {
+    "other": "更強的免疫力"
+  },
+  "increased_resistance_to_disease_and_parasites": {
+    "other": "增強抵禦疾病和寄生蟲的能力"
+  },
+  "healthy_skin_and_coat": {
+    "other": "健康皮膚與毛髮"
+  },
+  "no_more_foul_body_odour_or_bad_breath": {
+    "other": "告別難聞的體味和口氣"
+  },
+  "allergies": {
+    "other": "過敏"
+  },
+  "cancer": {
+    "other": "癌症"
+  },
+  "renal_conditions": {
+    "other": "腎臟問題"
+  },
+  "liver_conditions": {
+    "other": "肝臟問題"
+  },
+  "digestive_problems": {
+    "other": "消化問題"
+  },
+  "aging": {
+    "other": "年老"
+  },
+  "skip_to_content": {
+    "other": "跳至主要內容"
+  },
+  "search": {
+    "other": "搜索"
+  },
+  "call": {
+    "other": "致電"
+  },
+  "menu": {
+    "other": "菜單"
+  },
+  "main": {
+    "other": "主導航"
+  },
+  "search_alt": {
+    "other": "搜索（Alt + /）"
+  },
+  "our_holiday_sale_is_on": {
+    "other": "節日優惠開始了。"
+  },
+  "see_the_flyer": {
+    "other": "查看宣傳單"
+  },
+  "raw_natural_food_and_honest_advice_for_dogs_and_cats_a": {
+    "other": "犬貓天然生食與誠懇建議——紮根社區的"
+  },
+  "neighbourhood_shop": {
+    "other": "鄰里小店。"
+  },
+  "follow_us_on_facebook": {
+    "other": "在 Facebook 關注我們"
+  },
+  "visit": {
+    "other": "到訪"
+  },
+  "hours": {
+    "other": "營業時間"
+  },
+  "explore": {
+    "other": "瀏覽"
+  },
+  "built_with": {
+    "other": "採用以下技術製作："
+  },
+  "not_sure_what_to_feed": {
+    "other": "不確定該喂什麼？"
+  },
+  "tell_us_about_your_dog_or_cat_and_we_ll_help_you_choose_in_store": {
+    "other": "告訴我們您家狗狗或貓咪的情況，我們會在店內、電話或郵件中協助您選擇。"
+  },
+  "send_a_message": {
+    "other": "留言"
+  },
+  "home": {
+    "other": "首頁"
+  },
+  "ask_us_a_question": {
+    "other": "向我們提問"
+  },
+  "breadcrumb": {
+    "other": "當前位置"
+  },
+  "methods_of_payment": {
+    "other": "付款方式"
+  },
+  "name": {
+    "other": "姓名"
+  },
+  "phone_number": {
+    "other": "電話號碼"
+  },
+  "email": {
+    "other": "電子郵箱"
+  },
+  "how_can_we_help": {
+    "other": "有什麼可以幫您？"
+  },
+  "send_message": {
+    "other": "發送留言"
+  },
+  "open_email_draft": {
+    "other": "打開郵件草稿"
+  },
+  "this_opens_a_draft_in_your_email_app_send_the_email_from_there_to": {
+    "other": "此操作會在您的郵件應用中打開草稿。請在應用中發送郵件以聯繫我們。您也可以直接發送郵件至"
+  },
+  "directly": {
+    "other": "。"
+  },
+  "we_ll_get_back_to_you_as_quickly_as_we_can_for_anything_urgent_ca": {
+    "other": "我們會盡快回復。如有緊急事項，請致電"
+  },
+  "tell_us_about_your_pet_species_age_and_what_you_re_looking_for": {
+    "other": "請介紹您的寵物——種類、年齡，以及您想了解或購買什麼。"
+  },
+  "map_showing": {
+    "other": "地圖顯示"
+  },
+  "about": {
+    "other": "關於我們"
+  },
+  "products": {
+    "other": "產品"
+  },
+  "nutrition": {
+    "other": "生食餵養"
+  },
+  "services": {
+    "other": "服務"
+  },
+  "deliveries": {
+    "other": "配送"
+  },
+  "contact": {
+    "other": "聯繫我們"
+  },
+  "language": {
+    "other": "語言"
+  },
+  "search_intro": {
+    "other": "想找某個品牌、產品或餵養建議？輸入關鍵詞即可。"
+  },
+  "search_empty": {
+    "other": "沒有找到結果。請嘗試品牌名稱，例如 Acana，或“配送”“營養補充品”等主題。"
+  },
+  "search_error": {
+    "other": "搜索暫時無法加載。請刷新頁面，或通過菜單瀏覽。"
+  },
+  "search_results": {
+    "other": "搜索結果"
+  },
+  "popular": {
+    "other": "熱門搜索："
+  },
+  "search_raw_dog": {
+    "other": "犬用生食"
+  },
+  "search_cat": {
+    "other": "貓糧"
+  },
+  "search_supplements": {
+    "other": "營養補充品"
+  },
+  "search_treats": {
+    "other": "零食"
+  },
+  "search_meals": {
+    "other": "餐食計劃"
+  },
+  "search_delivery": {
+    "other": "配送"
+  },
+  "search_puppy": {
+    "other": "幼犬"
+  },
+  "search_hours": {
+    "other": "營業時間"
+  },
+  "hours_location": {
+    "other": "營業時間與地址"
+  },
+  "hours_weekdays": {
+    "other": "星期一至星期五"
+  },
+  "hours_saturday": {
+    "other": "星期六"
+  },
+  "hours_sunday": {
+    "other": "星期日"
+  },
+  "hours_holidays": {
+    "other": "法定假日（星期一至星期五）：上午 10 時至下午 5 時"
+  },
+  "cash": {
+    "other": "現金"
+  },
+  "regular_hours": {
+    "other": "按每週常規營業時間顯示；法定假日的時間可能不同。"
+  },
+  "open_until": {
+    "other": "正在營業 · 營業至 {{ .Time }}"
+  },
+  "opens_today": {
+    "other": "今天 {{ .Time }} 開門"
+  },
+  "opens_tomorrow": {
+    "other": "已休息 · 明天 {{ .Time }} 開門"
+  },
+  "closed": {
+    "other": "已休息"
+  },
+  "form_send": {
+    "other": "發送留言"
+  },
+  "form_draft": {
+    "other": "打開郵件草稿"
+  },
+  "form_email_before": {
+    "other": "此操作會在您的郵件應用中打開草稿。請在應用中發送郵件以聯繫我們。您也可以直接發送郵件至"
+  },
+  "form_email_after": {
+    "other": "。"
+  },
+  "form_urgent": {
+    "other": "我們會盡快回復。如有緊急事項，請致電"
+  },
+  "form_subject": {
+    "other": "網站諮詢，來自"
+  },
+  "flyer_note": {
+    "other": "優惠宣傳單（英文 PDF）"
+  },
+  "footer_description": {
+    "other": "犬貓天然生食與誠懇建議——紮根 Kerrisdale 的社區小店。"
+  },
+  "not_found": {
+    "other": "找不到頁面"
+  },
+  "not_found_body": {
+    "other": "未能找到您要查看的頁面。請通過菜單瀏覽，或返回首頁。"
+  },
+  "back_home": {
+    "other": "返回首頁"
+  }
+}

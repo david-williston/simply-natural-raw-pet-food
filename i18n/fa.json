@@ -1,0 +1,482 @@
+{
+  "visit_heading": {
+    "other": "ما را در West Boulevard در {{ .Neighbourhood }} پیدا کنید"
+  },
+  "vancouver": {
+    "other": "، ونکوور"
+  },
+  "real_food_for_the_furry_members_of_your_family": {
+    "other": "غذای واقعی برای اعضای پشمالوی خانواده شما"
+  },
+  "frozen_raw_diets_carefully_chosen_dry_and_canned_food_supplements": {
+    "other": "غذاهای خام منجمد، غذای خشک و کنسروی با انتخاب دقیق، مکمل و تشویقی؛ همراه با راهنمایی دوستانه از افرادی آشنا با تغذیه حیوانات."
+  },
+  "see_what_we_carry": {
+    "other": "محصولات ما را ببینید"
+  },
+  "visit_the_shop": {
+    "other": "به فروشگاه سر بزنید"
+  },
+  "raw_natural_food": {
+    "other": "غذای خام و طبیعی"
+  },
+  "free_range_non_medicated_meats": {
+    "other": "گوشت حیوانات پرورش‌یافته در فضای آزاد و بدون دارو"
+  },
+  "custom_meal_plans": {
+    "other": "برنامه غذایی اختصاصی"
+  },
+  "for_allergies_aging_and_more": {
+    "other": "برای آلرژی، سالمندی و موارد دیگر"
+  },
+  "local_delivery": {
+    "other": "ارسال محلی"
+  },
+  "to_your_door_in_vancouver": {
+    "other": "تا در منزل در ونکوور"
+  },
+  "puppy_kindergarten": {
+    "other": "کلاس آمادگی توله‌سگ"
+  },
+  "six_week_positive_training": {
+    "other": "شش هفته آموزش با تقویت مثبت"
+  },
+  "why_feed_raw": {
+    "other": "چرا غذای خام؟"
+  },
+  "a_species_appropriate_diet_and_a_pet_that_shows_it": {
+    "other": "غذای متناسب با گونه؛ تأثیری که در حیوانتان دیده می‌شود"
+  },
+  "do_you_have_doubts_about_what_to_feed_your_pet_every_member_of_yo": {
+    "other": "در انتخاب غذای حیوانتان تردید دارید؟ همه اعضای خانواده، حتی پشمالوها، شایسته غذای مغذی، سالم و طبیعی‌اند. قفسه‌های ما فقط با بهترین غذای خام از تأمین‌کنندگان معتبر پر می‌شوند و تیم ما شما را برای انتخاب مناسب دوست پشمالویتان راهنمایی می‌کند."
+  },
+  "dogs_and_cats_are_built_to_thrive_on_fresh_unprocessed_food_raw_d": {
+    "other": "بدن سگ و گربه برای بهره بردن از غذای تازه و فرآوری‌نشده ساخته شده است. رژیم خام آنزیم‌ها و مواد مغذی را که فرآوری شدید از بین می‌برد حفظ می‌کند و مواد پرکننده، نگهدارنده و کربوهیدرات اضافی را کنار می‌گذارد."
+  },
+  "pet_parents_who_switch_tell_us_they_notice": {
+    "other": "صاحبان حیواناتی که به غذای خام روی آورده‌اند از این تغییرات می‌گویند:"
+  },
+  "and_the_satisfaction_of_knowing_exactly_what_your_pet_is_eating": {
+    "other": "و رضایت از اینکه دقیقاً می‌دانید حیوانتان چه می‌خورد."
+  },
+  "read_our_raw_feeding_guide": {
+    "other": "راهنمای تغذیه خام را بخوانید"
+  },
+  "in_the_shop": {
+    "other": "در فروشگاه"
+  },
+  "everything_a_naturally_fed_pet_needs": {
+    "other": "هرچه حیوان با تغذیه طبیعی نیاز دارد"
+  },
+  "alongside_raw_food_we_carry_a_small_selection_of_the_highest_qual": {
+    "other": "در کنار غذای خام، مجموعه کوچکی از باکیفیت‌ترین غذاهای آماده داریم؛ خشک‌شده، خشک‌شده انجمادی و برندهای منتخب غذای خشک. سفارش ویژه همیشه می‌پذیریم."
+  },
+  "browse_brands_we_carry": {
+    "other": "برندهای موجود را ببینید"
+  },
+  "stay_up_to_date_on_new_products_by_connecting_with_us_on": {
+    "other": "برای آگاهی از محصولات تازه، ما را دنبال کنید در"
+  },
+  "facebook": {
+    "other": "Facebook"
+  },
+  "new_to_raw": {
+    "other": "تازه با غذای خام آشنا شده‌اید؟"
+  },
+  "switching_is_simpler_than_you_think": {
+    "other": "تغییر رژیم ساده‌تر از چیزی است که فکر می‌کنید"
+  },
+  "start_hungry": {
+    "other": "با اشتها شروع کنید"
+  },
+  "a_half_day_or_full_day_fast_before_the_first_raw_meal_makes_sure": {
+    "other": "نیم‌روز یا یک روز ناشتا بودن پیش از اولین وعده خام کمک می‌کند حیوان با اشتهای خوب سراغ غذا برود."
+  },
+  "go_small": {
+    "other": "با مقدار کم شروع کنید"
+  },
+  "offer_a_smaller_portion_at_first_and_watch_how_they_handle_the_fr": {
+    "other": "ابتدا وعده کوچک‌تری بدهید و ببینید حیوانتان با غذای تازه چگونه کنار می‌آید."
+  },
+  "swap_gradually": {
+    "other": "به‌تدریج جایگزین کنید"
+  },
+  "replace_a_little_more_of_the_old_food_with_raw_at_each_meal_adjus": {
+    "other": "در هر وعده کمی بیشتر از غذای قبلی را با غذای خام عوض کنید و سرعت تغییر را با گوارش حیوان هماهنگ کنید."
+  },
+  "full_transition_tips": {
+    "other": "همه نکات تغییر رژیم"
+  },
+  "our_pet_community": {
+    "other": "دوستان پشمالوی محله ما"
+  },
+  "more_than_a_pet_food_store": {
+    "other": "فراتر از فروشگاه غذای حیوانات"
+  },
+  "meal_plans_puppy_classes_and_delivery": {
+    "other": "برنامه غذایی، کلاس توله‌سگ و ارسال"
+  },
+  "what_goes_in_the_bowl_has_a_big_effect_on_health_if_your_dog_or_c": {
+    "other": "آنچه در ظرف غذاست بر سلامت اثر زیادی دارد. اگر سگ یا گربه شما مشکل سلامت دارد، می‌توانیم برای کمک برنامه غذایی تهیه کنیم. برای این موارد برنامه داریم:"
+  },
+  "meal_plans": {
+    "other": "برنامه غذایی"
+  },
+  "built_around_your_pet_s_needs": {
+    "other": "متناسب با نیازهای حیوان شما"
+  },
+  "for_puppies_9_24_weeks": {
+    "other": "برای توله‌های ۹ تا ۲۴ هفته"
+  },
+  "delivery": {
+    "other": "ارسال"
+  },
+  "never_run_out_of_food": {
+    "other": "نگذارید غذا تمام شود"
+  },
+  "visit_us": {
+    "other": "به ما سر بزنید"
+  },
+  "a_trusted_neighbourhood_source_for_over_a_decade_recommended_by_t": {
+    "other": "بیش از یک دهه منبع مورد اعتماد محله؛ توصیه‌شده توسط مربیان، هدایت‌کنندگان سگ‌های پلیس، پرورش‌دهندگان، سازمان‌های نجات و دامپزشکان کل‌نگر در سراسر لوئر مین‌لند."
+  },
+  "open_7_days_a_week": {
+    "other": "هر ۷ روز هفته باز هستیم"
+  },
+  "ask_about_our_frequent_buyer_program": {
+    "other": "درباره برنامه مشتریان وفادار بپرسید."
+  },
+  "get_directions": {
+    "other": "مسیریابی"
+  },
+  "freezers_stocked_with_frozen_raw_pet_food_at_simply_natural": {
+    "other": "فریزرهای پر از غذای خام منجمد در Simply Natural"
+  },
+  "natural_instincts_frozen_raw_food_in_lamb_goat_and_turkey": {
+    "other": "غذای خام منجمد Natural Instincts با گوشت بره، بز و بوقلمون"
+  },
+  "frozen_raw_diets": {
+    "other": "غذای خام منجمد"
+  },
+  "complete_raw_meals_and_raw_meaty_bones_for_dogs_and_cats": {
+    "other": "وعده‌های کامل خام و استخوان خام گوشتی برای سگ و گربه."
+  },
+  "shelves_of_dry_food_and_accessories_inside_the_store": {
+    "other": "قفسه غذای خشک و لوازم جانبی داخل فروشگاه"
+  },
+  "dry_canned_freeze_dried": {
+    "other": "خشک، کنسروی و خشک‌شده انجمادی"
+  },
+  "a_small_select_range_of_the_best_convenience_foods": {
+    "other": "مجموعه‌ای کوچک و برگزیده از بهترین غذاهای آماده."
+  },
+  "pet_supplements_including_omega_oils_and_probiotics": {
+    "other": "مکمل‌های حیوانات شامل روغن امگا و پروبیوتیک"
+  },
+  "supplements": {
+    "other": "مکمل‌ها"
+  },
+  "omega_oils_probiotics_and_targeted_support": {
+    "other": "روغن امگا، پروبیوتیک و حمایت هدفمند."
+  },
+  "wall_of_natural_pet_treats": {
+    "other": "دیوار تشویقی‌های طبیعی حیوانات"
+  },
+  "treats_toys_gear": {
+    "other": "تشویقی، اسباب‌بازی و لوازم"
+  },
+  "raw_compatible_treats_training_supplies_and_accessories": {
+    "other": "تشویقی سازگار با رژیم خام، وسایل آموزش و لوازم جانبی."
+  },
+  "a_little_girl_hugging_her_dog_on_the_floor": {
+    "other": "دختری کوچک که روی زمین سگش را در آغوش گرفته است"
+  },
+  "a_woman_embracing_her_dog": {
+    "other": "زنی که سگش را در آغوش گرفته است"
+  },
+  "a_woman_cuddling_her_dog": {
+    "other": "زنی که سگش را نوازش می‌کند"
+  },
+  "two_boxer_dogs_looking_up_together": {
+    "other": "دو سگ باکسر که با هم به بالا نگاه می‌کنند"
+  },
+  "a_white_dog_looking_at_the_camera": {
+    "other": "سگی سفید که به دوربین نگاه می‌کند"
+  },
+  "a_puppy_rolling_on_the_grass": {
+    "other": "توله‌سگی در حال غلتیدن روی چمن"
+  },
+  "simply_natural_raw_pet_food_storefront_on_west_boulevard": {
+    "other": "نمای فروشگاه Simply Natural Raw Pet Food در West Boulevard"
+  },
+  "inside_the_store": {
+    "other": "داخل فروشگاه"
+  },
+  "improved_digestion": {
+    "other": "هضم بهتر"
+  },
+  "clean_teeth": {
+    "other": "دندان‌های تمیز"
+  },
+  "strong_nails": {
+    "other": "ناخن‌های محکم"
+  },
+  "healthy_ears": {
+    "other": "گوش‌های سالم"
+  },
+  "a_stronger_immune_system": {
+    "other": "سیستم ایمنی قوی‌تر"
+  },
+  "increased_resistance_to_disease_and_parasites": {
+    "other": "مقاومت بیشتر در برابر بیماری و انگل"
+  },
+  "healthy_skin_and_coat": {
+    "other": "پوست و موی سالم"
+  },
+  "no_more_foul_body_odour_or_bad_breath": {
+    "other": "دیگر بوی نامطبوع بدن و دهان نخواهد بود"
+  },
+  "allergies": {
+    "other": "آلرژی"
+  },
+  "cancer": {
+    "other": "سرطان"
+  },
+  "renal_conditions": {
+    "other": "بیماری کلیوی"
+  },
+  "liver_conditions": {
+    "other": "بیماری کبدی"
+  },
+  "digestive_problems": {
+    "other": "مشکلات گوارشی"
+  },
+  "aging": {
+    "other": "سالمندی"
+  },
+  "skip_to_content": {
+    "other": "رفتن به محتوا"
+  },
+  "search": {
+    "other": "جستجو"
+  },
+  "call": {
+    "other": "تماس"
+  },
+  "menu": {
+    "other": "فهرست"
+  },
+  "main": {
+    "other": "ناوبری اصلی"
+  },
+  "search_alt": {
+    "other": "جستجو (Alt + /)"
+  },
+  "our_holiday_sale_is_on": {
+    "other": "حراج تعطیلات ما آغاز شده است."
+  },
+  "see_the_flyer": {
+    "other": "برگه حراج را ببینید"
+  },
+  "raw_natural_food_and_honest_advice_for_dogs_and_cats_a": {
+    "other": "غذای خام و طبیعی و راهنمایی صادقانه برای سگ و گربه؛ فروشگاهی در"
+  },
+  "neighbourhood_shop": {
+    "other": "در محله شما."
+  },
+  "follow_us_on_facebook": {
+    "other": "ما را در Facebook دنبال کنید"
+  },
+  "visit": {
+    "other": "بازدید"
+  },
+  "hours": {
+    "other": "ساعات کار"
+  },
+  "explore": {
+    "other": "بیشتر ببینید"
+  },
+  "built_with": {
+    "other": "ساخته‌شده با"
+  },
+  "not_sure_what_to_feed": {
+    "other": "نمی‌دانید چه غذایی بدهید؟"
+  },
+  "tell_us_about_your_dog_or_cat_and_we_ll_help_you_choose_in_store": {
+    "other": "درباره سگ یا گربه‌تان بگویید تا حضوری، تلفنی یا با ایمیل در انتخاب کمکتان کنیم."
+  },
+  "send_a_message": {
+    "other": "پیام بفرستید"
+  },
+  "home": {
+    "other": "خانه"
+  },
+  "ask_us_a_question": {
+    "other": "از ما بپرسید"
+  },
+  "breadcrumb": {
+    "other": "مسیر صفحه"
+  },
+  "methods_of_payment": {
+    "other": "روش‌های پرداخت"
+  },
+  "name": {
+    "other": "نام"
+  },
+  "phone_number": {
+    "other": "شماره تلفن"
+  },
+  "email": {
+    "other": "ایمیل"
+  },
+  "how_can_we_help": {
+    "other": "چگونه کمک کنیم؟"
+  },
+  "send_message": {
+    "other": "ارسال پیام"
+  },
+  "open_email_draft": {
+    "other": "باز کردن پیش‌نویس ایمیل"
+  },
+  "this_opens_a_draft_in_your_email_app_send_the_email_from_there_to": {
+    "other": "این فرم در برنامه ایمیل شما پیش‌نویس باز می‌کند. برای تماس با ما ایمیل را از همان برنامه ارسال کنید. همچنین می‌توانید به این نشانی ایمیل بفرستید:"
+  },
+  "directly": {
+    "other": "به‌صورت مستقیم."
+  },
+  "we_ll_get_back_to_you_as_quickly_as_we_can_for_anything_urgent_ca": {
+    "other": "در اولین فرصت پاسخ می‌دهیم. برای موارد فوری با این شماره تماس بگیرید:"
+  },
+  "tell_us_about_your_pet_species_age_and_what_you_re_looking_for": {
+    "other": "درباره حیوانتان بگویید؛ نوع، سن و چیزی که می‌خواهید."
+  },
+  "map_showing": {
+    "other": "نقشه موقعیت"
+  },
+  "about": {
+    "other": "درباره ما"
+  },
+  "products": {
+    "other": "محصولات"
+  },
+  "nutrition": {
+    "other": "تغذیه خام"
+  },
+  "services": {
+    "other": "خدمات"
+  },
+  "deliveries": {
+    "other": "ارسال"
+  },
+  "contact": {
+    "other": "تماس"
+  },
+  "language": {
+    "other": "زبان"
+  },
+  "search_intro": {
+    "other": "دنبال برند، محصول یا راهنمای تغذیه هستید؟ شروع به نوشتن کنید."
+  },
+  "search_empty": {
+    "other": "نتیجه‌ای پیدا نشد. نام برندی مانند Acana یا موضوعی مانند «ارسال» یا «مکمل» را امتحان کنید."
+  },
+  "search_error": {
+    "other": "جستجو بارگذاری نشد. صفحه را دوباره بارگذاری کنید یا از فهرست استفاده کنید."
+  },
+  "search_results": {
+    "other": "نتایج جستجو"
+  },
+  "popular": {
+    "other": "جستجوهای پرطرفدار:"
+  },
+  "search_raw_dog": {
+    "other": "غذای خام سگ"
+  },
+  "search_cat": {
+    "other": "غذای گربه"
+  },
+  "search_supplements": {
+    "other": "مکمل"
+  },
+  "search_treats": {
+    "other": "تشویقی"
+  },
+  "search_meals": {
+    "other": "برنامه غذایی"
+  },
+  "search_delivery": {
+    "other": "ارسال"
+  },
+  "search_puppy": {
+    "other": "توله"
+  },
+  "search_hours": {
+    "other": "ساعات کار"
+  },
+  "hours_location": {
+    "other": "ساعات و نشانی"
+  },
+  "hours_weekdays": {
+    "other": "دوشنبه تا جمعه"
+  },
+  "hours_saturday": {
+    "other": "شنبه"
+  },
+  "hours_sunday": {
+    "other": "یکشنبه"
+  },
+  "hours_holidays": {
+    "other": "تعطیلات رسمی (دوشنبه تا جمعه): ۱۰ صبح تا ۵ عصر"
+  },
+  "cash": {
+    "other": "نقدی"
+  },
+  "regular_hours": {
+    "other": "ساعات عادی هفته؛ ساعات تعطیلات رسمی ممکن است متفاوت باشد."
+  },
+  "open_until": {
+    "other": "اکنون باز است · تا {{ .Time }}"
+  },
+  "opens_today": {
+    "other": "امروز ساعت {{ .Time }} باز می‌شود"
+  },
+  "opens_tomorrow": {
+    "other": "بسته است · فردا ساعت {{ .Time }} باز می‌شود"
+  },
+  "closed": {
+    "other": "بسته است"
+  },
+  "form_send": {
+    "other": "ارسال پیام"
+  },
+  "form_draft": {
+    "other": "باز کردن پیش‌نویس ایمیل"
+  },
+  "form_email_before": {
+    "other": "این فرم در برنامه ایمیل شما پیش‌نویس باز می‌کند. برای تماس با ما ایمیل را از همان برنامه ارسال کنید. همچنین می‌توانید به این نشانی ایمیل بفرستید:"
+  },
+  "form_email_after": {
+    "other": "به‌صورت مستقیم."
+  },
+  "form_urgent": {
+    "other": "در اولین فرصت پاسخ می‌دهیم. برای موارد فوری با این شماره تماس بگیرید:"
+  },
+  "form_subject": {
+    "other": "پرسش از وب‌سایت؛ فرستنده:"
+  },
+  "flyer_note": {
+    "other": "برگه حراج (PDF انگلیسی)"
+  },
+  "footer_description": {
+    "other": "غذای خام و طبیعی و راهنمایی صادقانه برای سگ و گربه؛ فروشگاهی محلی در کریزدیل."
+  },
+  "not_found": {
+    "other": "صفحه پیدا نشد"
+  },
+  "not_found_body": {
+    "other": "صفحه مورد نظر پیدا نشد. از فهرست استفاده کنید یا به خانه برگردید."
+  },
+  "back_home": {
+    "other": "بازگشت به خانه"
+  }
+}

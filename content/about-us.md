@@ -1,7 +1,6 @@
 ---
 title: About Us
 linkTitle: About
-url: /about-us/
 description: Simply Natural Raw Pet Food has been Kerrisdale's trusted source for raw and natural pet food for over a decade.
 lead: A neighbourhood shop in Kerrisdale, devoted to feeding dogs and cats the way nature intended.
 ---

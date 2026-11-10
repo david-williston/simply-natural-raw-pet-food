@@ -19,6 +19,32 @@ Pushing to `main` runs `.github/workflows/pages.yaml`, which installs Hugo Exten
 0.163.1, checks out the PaperMod submodule, and builds and deploys GitHub Pages.
 The workflow uses the Pages URL for links, assets, search and canonical URLs.
 
+## Languages and search
+
+The site has eight versions: English at the root, Simplified Chinese (`zh-hans`),
+Traditional Chinese (`zh-hant`), Korean (`ko`), Japanese (`ja`), Canadian French
+(`fr`), Iranian Persian (`fa`, right-to-left), and Brazilian Portuguese (`pt-br`).
+The language menu links to the equivalent page in each language.
+
+English content lives in `content/*.md`; translations use matching names such as
+`content/products.fr.md`. Keep explicit anchor IDs and link destinations aligned
+between versions. Shared text, including homepage copy, is in `i18n/<language>.json`.
+The business name, brands, address, phone and email remain unchanged.
+
+Search uses an index for the current language, and result cards show excerpts
+around matching text with highlighted terms. No external translation or search
+service is required. The original sale flyer is an English PDF in every version.
+
+After changing content, build and check all translated pages and links:
+
+```bash
+hugo --gc --minify
+python3 scripts/check-site.py public
+```
+
+The same checks run before GitHub Pages deployment. Translations are AI-authored;
+native-speaker editorial review is still useful, especially for nutrition copy.
+
 The original custom domain is not changed by this deployment. When moving that
 domain, update the Pages custom-domain settings and DNS separately.
 

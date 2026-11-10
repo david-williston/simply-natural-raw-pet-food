@@ -1,7 +1,6 @@
 ---
 title: Pet Food Delivery in Vancouver
 linkTitle: Delivery
-url: /deliveries/
 description: Fresh raw pet food, dry food and supplements delivered to your door in Vancouver by Simply Natural Raw Pet Food.
 lead: Your pet's favourite food, brought to your doorstep — one less errand, and no more running out.
 banner: banner-deliveries.jpg

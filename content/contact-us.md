@@ -1,7 +1,6 @@
 ---
 title: Contact Us
 linkTitle: Contact
-url: /contact-us/
 description: Visit Simply Natural Raw Pet Food at 5565 West Boulevard in Kerrisdale, Vancouver, call 604-266-1125 or send us a message.
 lead: Stop by the shop, give us a call or send a message — we're happy to help with food, supplements, training or delivery.
 sidebar: false

@@ -1,10 +1,10 @@
 {{- $b := site.Params.business -}}
 <dl class="hours" data-hours='{{ $b.hours | jsonify }}'>
-  {{- range $b.hours }}
+  {{- range $i, $hours := $b.hours }}
   <div class="hours-row" data-days="{{ delimit .days "," }}">
-    <dt>{{ .label }}</dt>
-    <dd>{{ .text }}</dd>
+    <dt>{{ i18n (index (slice "hours_weekdays" "hours_saturday" "hours_sunday") $i) }}</dt>
+    <dd><bdi dir="ltr">{{ if eq site.Language.Lang "en" }}{{ .text }}{{ else }}{{ .open }} – {{ .close }}{{ end }}</bdi></dd>
   </div>
   {{- end }}
 </dl>
-{{- with $b.holidayHours }}<p class="hours-note">{{ . }}</p>{{ end }}
+{{- with $b.holidayHours }}<p class="hours-note">{{ i18n "hours_holidays" }}</p>{{ end }}

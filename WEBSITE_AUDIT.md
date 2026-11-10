@@ -5,6 +5,14 @@ its public page sitemap, all eight published pages, live galleries, and linked a
 This is a content and functionality comparison, not a word-for-word copy or a
 medical review of the original site's nutrition claims.
 
+The subsequent multilingual update adds full Simplified Chinese, Traditional
+Chinese, Korean, Japanese, French, Farsi and Brazilian Portuguese versions of
+the English site. The language selector preserves the current page, search
+indexes stay within the selected language, and search cards include highlighted
+matching excerpts. Farsi uses a right-to-left layout. Build checks cover all
+72 pages, their language equivalents, UI translations, links, assets and anchors.
+Translations are AI-authored and have not been professionally copyedited.
+
 ## Page coverage
 
 | Original page | Result |

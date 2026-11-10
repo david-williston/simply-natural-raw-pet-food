@@ -4,34 +4,34 @@
   <div class="wrap footer-grid">
     <div class="footer-brand">
       <p class="footer-title">{{ site.Title }}</p>
-      <p>Raw, natural food and honest advice for dogs and cats — a {{ $b.neighbourhood }} neighbourhood shop.</p>
-      <a class="footer-social" href="{{ $b.facebook }}" target="_blank" rel="noopener">{{ partial "icon.html" "facebook" }}Follow us on Facebook</a>
+      <p>{{ i18n "footer_description" }}</p>
+      <a class="footer-social" href="{{ $b.facebook }}" target="_blank" rel="noopener">{{ partial "icon.html" "facebook" }}{{ i18n "follow_us_on_facebook" }}</a>
     </div>
     <div>
-      <h3>Visit</h3>
+      <h3>{{ i18n "visit" }}</h3>
       <address>
         <a href="{{ $b.mapsLink }}" target="_blank" rel="noopener">{{ $b.street }}<br>{{ $b.city }}, {{ $b.region }} {{ $b.postal }}</a><br>
-        <a href="tel:{{ $tel }}">{{ $b.phone }}</a><br>
-        <a href="mailto:{{ $b.email }}">{{ $b.email }}</a>
+        <a href="tel:{{ $tel }}"><bdi dir="ltr">{{ $b.phone }}</bdi></a><br>
+        <a href="mailto:{{ $b.email }}"><bdi dir="ltr">{{ $b.email }}</bdi></a>
       </address>
     </div>
     <div>
-      <h3>Hours</h3>
+      <h3>{{ i18n "hours" }}</h3>
       {{ partial "hours.html" . }}
     </div>
     <div>
-      <h3>Explore</h3>
+      <h3>{{ i18n "explore" }}</h3>
       <ul class="footer-links">
         {{- range site.Menus.main }}
-        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li><a href="{{ .URL }}">{{ i18n .Identifier }}</a></li>
         {{- end }}
-        <li><a href="{{ "puppy-kindergarten/" | relURL }}">Puppy Kindergarten</a></li>
+        <li><a href="{{ "puppy-kindergarten/" | relLangURL }}">{{ i18n "puppy_kindergarten" }}</a></li>
       </ul>
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <span>&copy; {{ now.Year }} {{ site.Title }}</span>
-    <span>Built with <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> &amp; <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></span>
+    <span>© {{ now.Year }} {{ site.Title }}</span>
+    <span>{{ i18n "built_with" }} <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></span>
   </div>
 </footer>
 
@@ -69,23 +69,25 @@
 
   // "Open now" status, always computed in the shop's timezone
   var hours = {{ $b.hours }};
+  var labels = {{ dict "open" (i18n "open_until" (dict "Time" "{time}")) "today" (i18n "opens_today" (dict "Time" "{time}")) "tomorrow" (i18n "opens_tomorrow" (dict "Time" "{time}")) "closed" (i18n "closed") "regular" (i18n "regular_hours") }};
   try {
     var parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
     var get = function (t) { return parts.find(function (p) { return p.type === t; }).value; };
     var day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(get('weekday'));
     var now = parseInt(get('hour'), 10) * 60 + parseInt(get('minute'), 10);
     var mins = function (s) { var p = s.split(':'); return p[0] * 60 + +p[1]; };
-    var fmt = function (s) { var p = s.split(':'), h = +p[0]; return (h % 12 || 12) + (p[1] !== '00' ? ':' + p[1] : '') + (h < 12 ? ' AM' : ' PM'); };
+    var fmt = function (s) { var p = s.split(':'); return new Intl.DateTimeFormat(document.documentElement.lang, { hour: 'numeric', minute: '2-digit', timeZone: 'UTC' }).format(new Date(Date.UTC(2000, 0, 1, +p[0], +p[1]))); };
     var today = hours.find(function (h) { return h.days.indexOf(day) > -1; });
     var text, open = false;
-    if (today && now >= mins(today.open) && now < mins(today.close)) { open = true; text = 'Open now · until ' + fmt(today.close); }
-    else if (today && now < mins(today.open)) { text = 'Opens today at ' + fmt(today.open); }
+    if (today && now >= mins(today.open) && now < mins(today.close)) { open = true; text = labels.open.replace('{time}', fmt(today.close)); }
+    else if (today && now < mins(today.open)) { text = labels.today.replace('{time}', fmt(today.open)); }
     else {
       var next = hours.find(function (h) { return h.days.indexOf((day + 1) % 7) > -1; });
-      text = next ? 'Closed · opens tomorrow at ' + fmt(next.open) : 'Closed';
+      text = next ? labels.tomorrow.replace('{time}', fmt(next.open)) : labels.closed;
     }
     document.querySelectorAll('[data-open-status]').forEach(function (el) {
       el.classList.add(open ? 'is-open' : 'is-closed');
+      el.title = labels.regular;
       el.querySelector('[data-open-text]').textContent = text;
     });
     document.querySelectorAll('.hours-row').forEach(function (row) {

@@ -1,0 +1,9 @@
+<details class="language-menu">
+  <summary aria-label="{{ i18n "language" }}">{{ partial "icon.html" "globe" }}<span lang="{{ .Language.Lang }}" dir="auto">{{ .Language.Label }}</span></summary>
+  <nav class="language-options" aria-label="{{ i18n "language" }}">
+    {{- $current := .Language.Lang -}}
+    {{- range (.AllTranslations | default site.Home.AllTranslations) }}
+    <a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}" hreflang="{{ .Language.Lang }}" aria-label="{{ .Language.Label }}" dir="auto"{{ if eq .Language.Lang $current }} aria-current="true"{{ end }}>{{ .Language.Label }}</a>
+    {{- end }}
+  </nav>
+</details>

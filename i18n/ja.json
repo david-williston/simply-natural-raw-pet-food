@@ -1,0 +1,482 @@
+{
+  "visit_heading": {
+    "other": "{{ .Neighbourhood }}のWest Boulevardでお待ちしています"
+  },
+  "vancouver": {
+    "other": "、バンクーバー"
+  },
+  "real_food_for_the_furry_members_of_your_family": {
+    "other": "大切なペットのための、自然な食事"
+  },
+  "frozen_raw_diets_carefully_chosen_dry_and_canned_food_supplements": {
+    "other": "冷凍ローフード、厳選したドライ・缶詰フード、サプリメント、トリーツ。そしてペットの栄養に詳しいスタッフの親身なアドバイス。"
+  },
+  "see_what_we_carry": {
+    "other": "取り扱い商品を見る"
+  },
+  "visit_the_shop": {
+    "other": "お店へどうぞ"
+  },
+  "raw_natural_food": {
+    "other": "ローフードと自然食"
+  },
+  "free_range_non_medicated_meats": {
+    "other": "放し飼いで育てた、薬剤不使用の肉"
+  },
+  "custom_meal_plans": {
+    "other": "個別食事プラン"
+  },
+  "for_allergies_aging_and_more": {
+    "other": "アレルギー、加齢などのニーズに"
+  },
+  "local_delivery": {
+    "other": "地域配送"
+  },
+  "to_your_door_in_vancouver": {
+    "other": "バンクーバーのご自宅へ"
+  },
+  "puppy_kindergarten": {
+    "other": "子犬の幼稚園"
+  },
+  "six_week_positive_training": {
+    "other": "正の強化で学ぶ6週間"
+  },
+  "why_feed_raw": {
+    "other": "生食を選ぶ理由"
+  },
+  "a_species_appropriate_diet_and_a_pet_that_shows_it": {
+    "other": "体に合う食事で、ペットの毎日を健やかに"
+  },
+  "do_you_have_doubts_about_what_to_feed_your_pet_every_member_of_yo": {
+    "other": "ペットに何を食べさせるかお悩みですか？大切なペットも、ご家族の一員。栄養豊かで健全な自然の食事を楽しんでほしいものです。当店は信頼する供給元の高品質なローフードだけを扱い、愛するペットに合う食事選びをお手伝いします。"
+  },
+  "dogs_and_cats_are_built_to_thrive_on_fresh_unprocessed_food_raw_d": {
+    "other": "犬と猫は、新鮮で加工されていない食事に合った体を持っています。ローフードは、高度な加工で失われる酵素や栄養を保ち、増量材、保存料、過剰な炭水化物を含みません。"
+  },
+  "pet_parents_who_switch_tell_us_they_notice": {
+    "other": "切り替えた飼い主様から寄せられる変化："
+  },
+  "and_the_satisfaction_of_knowing_exactly_what_your_pet_is_eating": {
+    "other": "…そして、ペットが何を食べているか正確に把握できる安心感も。"
+  },
+  "read_our_raw_feeding_guide": {
+    "other": "生食ガイドを読む"
+  },
+  "in_the_shop": {
+    "other": "店内の商品"
+  },
+  "everything_a_naturally_fed_pet_needs": {
+    "other": "自然な食事を楽しむペットに必要なものを"
+  },
+  "alongside_raw_food_we_carry_a_small_selection_of_the_highest_qual": {
+    "other": "ローフードのほか、乾燥食、フリーズドライ、厳選したドライフードなど、最高品質の手軽なフードも少量扱っています。お取り寄せも承ります。"
+  },
+  "browse_brands_we_carry": {
+    "other": "取り扱いブランドを見る"
+  },
+  "stay_up_to_date_on_new_products_by_connecting_with_us_on": {
+    "other": "新商品の情報はこちら："
+  },
+  "facebook": {
+    "other": "Facebook"
+  },
+  "new_to_raw": {
+    "other": "生食は初めてですか？"
+  },
+  "switching_is_simpler_than_you_think": {
+    "other": "切り替えは、思うより簡単です"
+  },
+  "start_hungry": {
+    "other": "食欲のある状態で始める"
+  },
+  "a_half_day_or_full_day_fast_before_the_first_raw_meal_makes_sure": {
+    "other": "最初の生食の前に半日から1日絶食することで、食欲のある状態で食事を始められます。"
+  },
+  "go_small": {
+    "other": "少量から"
+  },
+  "offer_a_smaller_portion_at_first_and_watch_how_they_handle_the_fr": {
+    "other": "最初は少なめに与え、新鮮な食事への反応を見ましょう。"
+  },
+  "swap_gradually": {
+    "other": "少しずつ切り替える"
+  },
+  "replace_a_little_more_of_the_old_food_with_raw_at_each_meal_adjus": {
+    "other": "毎回の食事で少しずつ従来のフードを生食に替え、消化の様子に合わせてペースを調整します。"
+  },
+  "full_transition_tips": {
+    "other": "詳しい切り替えのヒント"
+  },
+  "our_pet_community": {
+    "other": "私たちのペットコミュニティ"
+  },
+  "more_than_a_pet_food_store": {
+    "other": "フードを売るだけのお店ではありません"
+  },
+  "meal_plans_puppy_classes_and_delivery": {
+    "other": "食事プラン、子犬教室、配送"
+  },
+  "what_goes_in_the_bowl_has_a_big_effect_on_health_if_your_dog_or_c": {
+    "other": "食事は健康に大きく影響します。愛犬や愛猫に健康上の悩みがあれば、それに合う食事プラン作りをお手伝いします。次のような状態に対応しています："
+  },
+  "meal_plans": {
+    "other": "食事プラン"
+  },
+  "built_around_your_pet_s_needs": {
+    "other": "一頭ずつのニーズに合わせて"
+  },
+  "for_puppies_9_24_weeks": {
+    "other": "生後9～24週の子犬に"
+  },
+  "delivery": {
+    "other": "配送"
+  },
+  "never_run_out_of_food": {
+    "other": "フード切れの心配を減らす"
+  },
+  "visit_us": {
+    "other": "ご来店ください"
+  },
+  "a_trusted_neighbourhood_source_for_over_a_decade_recommended_by_t": {
+    "other": "10年以上にわたり地域で信頼をいただき、ローワーメインランドのトレーナー、警察犬ハンドラー、ブリーダー、保護団体、ホリスティック獣医師からご紹介いただいています。"
+  },
+  "open_7_days_a_week": {
+    "other": "週7日営業"
+  },
+  "ask_about_our_frequent_buyer_program": {
+    "other": "購入特典プログラムについてお尋ねください。"
+  },
+  "get_directions": {
+    "other": "経路を見る"
+  },
+  "freezers_stocked_with_frozen_raw_pet_food_at_simply_natural": {
+    "other": "Simply Naturalの冷凍ローフードが並ぶ冷凍庫"
+  },
+  "natural_instincts_frozen_raw_food_in_lamb_goat_and_turkey": {
+    "other": "ラム、ヤギ、七面鳥のNatural Instincts冷凍ローフード"
+  },
+  "frozen_raw_diets": {
+    "other": "冷凍ローフード"
+  },
+  "complete_raw_meals_and_raw_meaty_bones_for_dogs_and_cats": {
+    "other": "犬と猫のための完全な生食と肉付きの生骨。"
+  },
+  "shelves_of_dry_food_and_accessories_inside_the_store": {
+    "other": "店内のドライフードや用品の棚"
+  },
+  "dry_canned_freeze_dried": {
+    "other": "ドライ、缶詰、フリーズドライ"
+  },
+  "a_small_select_range_of_the_best_convenience_foods": {
+    "other": "高品質で手軽なフードを少量ずつ厳選。"
+  },
+  "pet_supplements_including_omega_oils_and_probiotics": {
+    "other": "オメガオイル、プロバイオティクスなどのペット用サプリメント"
+  },
+  "supplements": {
+    "other": "サプリメント"
+  },
+  "omega_oils_probiotics_and_targeted_support": {
+    "other": "オメガオイル、プロバイオティクス、目的に合わせたサポート。"
+  },
+  "wall_of_natural_pet_treats": {
+    "other": "壁に並ぶナチュラルなペット用トリーツ"
+  },
+  "treats_toys_gear": {
+    "other": "トリーツ、おもちゃ、用品"
+  },
+  "raw_compatible_treats_training_supplies_and_accessories": {
+    "other": "生食に合わせやすいトリーツ、トレーニング用品、アクセサリー。"
+  },
+  "a_little_girl_hugging_her_dog_on_the_floor": {
+    "other": "床の上で愛犬を抱く女の子"
+  },
+  "a_woman_embracing_her_dog": {
+    "other": "愛犬を抱きしめる女性"
+  },
+  "a_woman_cuddling_her_dog": {
+    "other": "愛犬に寄り添う女性"
+  },
+  "two_boxer_dogs_looking_up_together": {
+    "other": "一緒に見上げる2頭のボクサー"
+  },
+  "a_white_dog_looking_at_the_camera": {
+    "other": "カメラを見る白い犬"
+  },
+  "a_puppy_rolling_on_the_grass": {
+    "other": "芝生で転がる子犬"
+  },
+  "simply_natural_raw_pet_food_storefront_on_west_boulevard": {
+    "other": "West BoulevardにあるSimply Natural Raw Pet Foodの店頭"
+  },
+  "inside_the_store": {
+    "other": "店内"
+  },
+  "improved_digestion": {
+    "other": "消化の改善"
+  },
+  "clean_teeth": {
+    "other": "清潔な歯"
+  },
+  "strong_nails": {
+    "other": "丈夫な爪"
+  },
+  "healthy_ears": {
+    "other": "健康な耳"
+  },
+  "a_stronger_immune_system": {
+    "other": "免疫力の向上"
+  },
+  "increased_resistance_to_disease_and_parasites": {
+    "other": "病気や寄生虫への抵抗力の向上"
+  },
+  "healthy_skin_and_coat": {
+    "other": "健康な皮膚と被毛"
+  },
+  "no_more_foul_body_odour_or_bad_breath": {
+    "other": "不快な体臭や口臭の軽減"
+  },
+  "allergies": {
+    "other": "アレルギー"
+  },
+  "cancer": {
+    "other": "がん"
+  },
+  "renal_conditions": {
+    "other": "腎臓の疾患"
+  },
+  "liver_conditions": {
+    "other": "肝臓の疾患"
+  },
+  "digestive_problems": {
+    "other": "消化の問題"
+  },
+  "aging": {
+    "other": "加齢"
+  },
+  "skip_to_content": {
+    "other": "本文へ移動"
+  },
+  "search": {
+    "other": "検索"
+  },
+  "call": {
+    "other": "電話"
+  },
+  "menu": {
+    "other": "メニュー"
+  },
+  "main": {
+    "other": "メイン"
+  },
+  "search_alt": {
+    "other": "検索（Alt + /）"
+  },
+  "our_holiday_sale_is_on": {
+    "other": "ホリデーセール開催中です。"
+  },
+  "see_the_flyer": {
+    "other": "チラシを見る"
+  },
+  "raw_natural_food_and_honest_advice_for_dogs_and_cats_a": {
+    "other": "犬と猫のための自然な食事と率直なアドバイスを届ける、"
+  },
+  "neighbourhood_shop": {
+    "other": "地域のお店。"
+  },
+  "follow_us_on_facebook": {
+    "other": "Facebookで最新情報を"
+  },
+  "visit": {
+    "other": "ご来店"
+  },
+  "hours": {
+    "other": "営業時間"
+  },
+  "explore": {
+    "other": "サイト案内"
+  },
+  "built_with": {
+    "other": "制作："
+  },
+  "not_sure_what_to_feed": {
+    "other": "何を食べさせるかお悩みですか？"
+  },
+  "tell_us_about_your_dog_or_cat_and_we_ll_help_you_choose_in_store": {
+    "other": "愛犬や愛猫についてお聞かせください。店頭、お電話、メールで食事選びをお手伝いします。"
+  },
+  "send_a_message": {
+    "other": "メッセージを送る"
+  },
+  "home": {
+    "other": "ホーム"
+  },
+  "ask_us_a_question": {
+    "other": "質問する"
+  },
+  "breadcrumb": {
+    "other": "現在の位置"
+  },
+  "methods_of_payment": {
+    "other": "お支払い方法"
+  },
+  "name": {
+    "other": "お名前"
+  },
+  "phone_number": {
+    "other": "電話番号"
+  },
+  "email": {
+    "other": "メールアドレス"
+  },
+  "how_can_we_help": {
+    "other": "どのようなご相談ですか？"
+  },
+  "send_message": {
+    "other": "メッセージを送信"
+  },
+  "open_email_draft": {
+    "other": "メールの下書きを開く"
+  },
+  "this_opens_a_draft_in_your_email_app_send_the_email_from_there_to": {
+    "other": "メールアプリで下書きが開きます。アプリから送信してお問い合わせください。次のアドレスへ直接メールを送ることもできます："
+  },
+  "directly": {
+    "other": "ご連絡ください。"
+  },
+  "we_ll_get_back_to_you_as_quickly_as_we_can_for_anything_urgent_ca": {
+    "other": "できるだけ早くお返事します。お急ぎの場合はお電話ください："
+  },
+  "tell_us_about_your_pet_species_age_and_what_you_re_looking_for": {
+    "other": "ペットの種類、年齢、お探しのものをお知らせください。"
+  },
+  "map_showing": {
+    "other": "所在地の地図："
+  },
+  "about": {
+    "other": "お店の紹介"
+  },
+  "products": {
+    "other": "商品"
+  },
+  "nutrition": {
+    "other": "ローフード"
+  },
+  "services": {
+    "other": "サービス"
+  },
+  "deliveries": {
+    "other": "配送"
+  },
+  "contact": {
+    "other": "お問い合わせ"
+  },
+  "language": {
+    "other": "言語"
+  },
+  "search_intro": {
+    "other": "ブランド、商品、食事の情報をお探しですか？入力して検索してください。"
+  },
+  "search_empty": {
+    "other": "検索結果がありません。「Acana」などのブランド名や、「配送」「サプリメント」などの言葉をお試しください。"
+  },
+  "search_error": {
+    "other": "検索を読み込めませんでした。ページを再読み込みするか、メニューをご利用ください。"
+  },
+  "search_results": {
+    "other": "検索結果"
+  },
+  "popular": {
+    "other": "よく検索される言葉："
+  },
+  "search_raw_dog": {
+    "other": "犬のローフード"
+  },
+  "search_cat": {
+    "other": "猫のフード"
+  },
+  "search_supplements": {
+    "other": "サプリメント"
+  },
+  "search_treats": {
+    "other": "トリーツ"
+  },
+  "search_meals": {
+    "other": "食事プラン"
+  },
+  "search_delivery": {
+    "other": "配送"
+  },
+  "search_puppy": {
+    "other": "子犬"
+  },
+  "search_hours": {
+    "other": "営業時間"
+  },
+  "hours_location": {
+    "other": "営業時間・所在地"
+  },
+  "hours_weekdays": {
+    "other": "月曜日～金曜日"
+  },
+  "hours_saturday": {
+    "other": "土曜日"
+  },
+  "hours_sunday": {
+    "other": "日曜日"
+  },
+  "hours_holidays": {
+    "other": "法定祝日（月～金）：午前10時～午後5時"
+  },
+  "cash": {
+    "other": "現金"
+  },
+  "regular_hours": {
+    "other": "通常の週間営業時間です。法定祝日は異なる場合があります。"
+  },
+  "open_until": {
+    "other": "営業中 · {{ .Time }}まで"
+  },
+  "opens_today": {
+    "other": "本日{{ .Time }}に開店"
+  },
+  "opens_tomorrow": {
+    "other": "営業時間外 · 明日{{ .Time }}に開店"
+  },
+  "closed": {
+    "other": "営業時間外"
+  },
+  "form_send": {
+    "other": "メッセージを送信"
+  },
+  "form_draft": {
+    "other": "メールの下書きを開く"
+  },
+  "form_email_before": {
+    "other": "メールアプリで下書きが開きます。アプリから送信してお問い合わせください。次のアドレスへ直接メールを送ることもできます："
+  },
+  "form_email_after": {
+    "other": "ご連絡ください。"
+  },
+  "form_urgent": {
+    "other": "できるだけ早くお返事します。お急ぎの場合はお電話ください："
+  },
+  "form_subject": {
+    "other": "ウェブサイトからのお問い合わせ："
+  },
+  "flyer_note": {
+    "other": "セールチラシ（英語PDF）"
+  },
+  "footer_description": {
+    "other": "犬と猫のための自然な食事と率直なアドバイスを届ける、ケリスデールの身近なお店です。"
+  },
+  "not_found": {
+    "other": "ページが見つかりません"
+  },
+  "not_found_body": {
+    "other": "お探しのページは見つかりませんでした。メニューから探すか、ホームへお戻りください。"
+  },
+  "back_home": {
+    "other": "ホームに戻る"
+  }
+}

@@ -5,43 +5,43 @@
 <section class="hero">
   {{ partial "img.html" (dict "src" "hero-dogs.jpg" "alt" "" "class" "hero-img" "lazy" false "sizes" "100vw") }}
   <div class="wrap hero-inner">
-    <p class="eyebrow">{{ $b.neighbourhood }}, Vancouver</p>
-    <h1>Real food for the furry members of your family</h1>
-    <p class="hero-lead">Frozen raw diets, carefully chosen dry and canned food, supplements and treats — plus friendly advice from people who know pet nutrition.</p>
+    <p class="eyebrow">{{ $b.neighbourhood }}{{ i18n "vancouver" }}</p>
+    <h1>{{ i18n "real_food_for_the_furry_members_of_your_family" }}</h1>
+    <p class="hero-lead">{{ i18n "frozen_raw_diets_carefully_chosen_dry_and_canned_food_supplements" }}</p>
     <div class="btn-row">
-      <a class="btn btn-accent" href="{{ "products/" | relURL }}">See what we carry</a>
-      <a class="btn btn-ghost-light" href="#visit">{{ partial "icon.html" "pin" }}Visit the shop</a>
+      <a class="btn btn-accent" href="{{ "products/" | relLangURL }}">{{ i18n "see_what_we_carry" }}</a>
+      <a class="btn btn-ghost-light" href="#visit">{{ partial "icon.html" "pin" }}{{ i18n "visit_the_shop" }}</a>
     </div>
   </div>
 </section>
 
 <section class="strip">
   <div class="wrap strip-grid">
-    <a href="{{ "products/" | relURL }}">{{ partial "icon.html" "bowl" }}<span><strong>Raw &amp; natural food</strong>Free-range, non-medicated meats</span></a>
-    <a href="{{ "services/" | relURL }}#meal-plans">{{ partial "icon.html" "clipboard" }}<span><strong>Custom meal plans</strong>For allergies, aging and more</span></a>
-    <a href="{{ "deliveries/" | relURL }}">{{ partial "icon.html" "truck" }}<span><strong>Local delivery</strong>To your door in Vancouver</span></a>
-    <a href="{{ "puppy-kindergarten/" | relURL }}">{{ partial "icon.html" "paw" }}<span><strong>Puppy Kindergarten</strong>Six-week positive training</span></a>
+    <a href="{{ "products/" | relLangURL }}">{{ partial "icon.html" "bowl" }}<span><strong>{{ i18n "raw_natural_food" }}</strong>{{ i18n "free_range_non_medicated_meats" }}</span></a>
+    <a href="{{ "services/" | relLangURL }}#meal-plans">{{ partial "icon.html" "clipboard" }}<span><strong>{{ i18n "custom_meal_plans" }}</strong>{{ i18n "for_allergies_aging_and_more" }}</span></a>
+    <a href="{{ "deliveries/" | relLangURL }}">{{ partial "icon.html" "truck" }}<span><strong>{{ i18n "local_delivery" }}</strong>{{ i18n "to_your_door_in_vancouver" }}</span></a>
+    <a href="{{ "puppy-kindergarten/" | relLangURL }}">{{ partial "icon.html" "paw" }}<span><strong>{{ i18n "puppy_kindergarten" }}</strong>{{ i18n "six_week_positive_training" }}</span></a>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Why feed raw</p>
-      <h2>A species-appropriate diet, and a pet that shows it</h2>
-      <p>Do you have doubts about what to feed your pet? Every member of your family — even the furry ones — deserves nourishing, wholesome, natural food. We stock our shelves with only the finest raw pet food, made by respected suppliers, and our team will guide you to the best choice for your furry pal.</p>
-      <p>Dogs and cats are built to thrive on fresh, unprocessed food. Raw diets keep the enzymes and nutrients that heavy processing removes — and leave out the fillers, preservatives and excess carbohydrates.</p>
-      <p>Pet parents who switch tell us they notice:</p>
+      <p class="eyebrow">{{ i18n "why_feed_raw" }}</p>
+      <h2>{{ i18n "a_species_appropriate_diet_and_a_pet_that_shows_it" }}</h2>
+      <p>{{ i18n "do_you_have_doubts_about_what_to_feed_your_pet_every_member_of_yo" }}</p>
+      <p>{{ i18n "dogs_and_cats_are_built_to_thrive_on_fresh_unprocessed_food_raw_d" }}</p>
+      <p>{{ i18n "pet_parents_who_switch_tell_us_they_notice" }}</p>
       <ul class="checklist">
-        {{- range slice "Improved digestion" "Clean teeth" "Strong nails" "Healthy ears" "A stronger immune system" "Increased resistance to disease and parasites" "Healthy skin and coat" "No more foul body odour or bad breath" }}
+        {{- range slice (i18n "improved_digestion") (i18n "clean_teeth") (i18n "strong_nails") (i18n "healthy_ears") (i18n "a_stronger_immune_system") (i18n "increased_resistance_to_disease_and_parasites") (i18n "healthy_skin_and_coat") (i18n "no_more_foul_body_odour_or_bad_breath") }}
         <li>{{ partial "icon.html" "check" }}{{ . }}</li>
         {{- end }}
       </ul>
-      <p class="aside-note">…and the satisfaction of knowing exactly what your pet is eating.</p>
-      <a class="link-arrow" href="{{ "nutrition/" | relURL }}">Read our raw feeding guide {{ partial "icon.html" "arrow" }}</a>
+      <p class="aside-note">{{ i18n "and_the_satisfaction_of_knowing_exactly_what_your_pet_is_eating" }}</p>
+      <a class="link-arrow" href="{{ "nutrition/" | relLangURL }}">{{ i18n "read_our_raw_feeding_guide" }} {{ partial "icon.html" "arrow" }}</a>
     </div>
     <div class="split-media">
-      {{ partial "img.html" (dict "src" "store/freezers.jpg" "alt" "Freezers stocked with frozen raw pet food at Simply Natural" "sizes" "(min-width: 900px) 520px, 100vw") }}
+      {{ partial "img.html" (dict "src" "store/freezers.jpg" "alt" (i18n "freezers_stocked_with_frozen_raw_pet_food_at_simply_natural") "sizes" "(min-width: 900px) 520px, 100vw") }}
     </div>
   </div>
 </section>
@@ -49,56 +49,56 @@
 <section class="section section-tint">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">In the shop</p>
-      <h2>Everything a naturally fed pet needs</h2>
-      <p>Alongside raw food, we carry a small selection of the highest-quality convenience food — dehydrated, freeze-dried and select kibble brands. Special orders are always welcome.</p>
+      <p class="eyebrow">{{ i18n "in_the_shop" }}</p>
+      <h2>{{ i18n "everything_a_naturally_fed_pet_needs" }}</h2>
+      <p>{{ i18n "alongside_raw_food_we_carry_a_small_selection_of_the_highest_qual" }}</p>
     </div>
     <div class="cards cards-4">
       {{- $cards := slice
-        (dict "img" "store/raw-natural-instincts.jpg" "alt" "Natural Instincts frozen raw food in lamb, goat and turkey" "title" "Frozen raw diets" "text" "Complete raw meals and raw meaty bones for dogs and cats." "url" "products/#dog-food")
-        (dict "img" "store/interior-shelves.jpg" "alt" "Shelves of dry food and accessories inside the store" "title" "Dry, canned & freeze-dried" "text" "A small, select range of the best convenience foods." "url" "products/#dog-food")
-        (dict "img" "store/supplements.jpg" "alt" "Pet supplements including omega oils and probiotics" "title" "Supplements" "text" "Omega oils, probiotics and targeted support." "url" "products/#supplements")
-        (dict "img" "store/treats.jpg" "alt" "Wall of natural pet treats" "title" "Treats, toys & gear" "text" "Raw-compatible treats, training supplies and accessories." "url" "products/#treats") }}
+        (dict "img" "store/raw-natural-instincts.jpg" "alt" (i18n "natural_instincts_frozen_raw_food_in_lamb_goat_and_turkey") "title" (i18n "frozen_raw_diets") "text" (i18n "complete_raw_meals_and_raw_meaty_bones_for_dogs_and_cats") "url" "products/#dog-food")
+        (dict "img" "store/interior-shelves.jpg" "alt" (i18n "shelves_of_dry_food_and_accessories_inside_the_store") "title" (i18n "dry_canned_freeze_dried") "text" (i18n "a_small_select_range_of_the_best_convenience_foods") "url" "products/#dog-food")
+        (dict "img" "store/supplements.jpg" "alt" (i18n "pet_supplements_including_omega_oils_and_probiotics") "title" (i18n "supplements") "text" (i18n "omega_oils_probiotics_and_targeted_support") "url" "products/#supplements")
+        (dict "img" "store/treats.jpg" "alt" (i18n "wall_of_natural_pet_treats") "title" (i18n "treats_toys_gear") "text" (i18n "raw_compatible_treats_training_supplies_and_accessories") "url" "products/#treats") }}
       {{- range $cards }}
-      <a class="card" href="{{ .url | relURL }}">
+      <a class="card" href="{{ .url | relLangURL }}">
         <div class="card-media">{{ partial "img.html" (dict "src" .img "alt" .alt "sizes" "(min-width: 900px) 260px, 50vw") }}</div>
         <div class="card-body"><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
       </a>
       {{- end }}
     </div>
-    <p class="center"><a class="btn btn-primary" href="{{ "products/" | relURL }}">Browse brands we carry</a></p>
-    <p class="center follow-note">Stay up to date on new products by connecting with us on <a href="{{ $b.facebook }}" target="_blank" rel="noopener">Facebook</a>.</p>
+    <p class="center"><a class="btn btn-primary" href="{{ "products/" | relLangURL }}">{{ i18n "browse_brands_we_carry" }}</a></p>
+    <p class="center follow-note">{{ i18n "stay_up_to_date_on_new_products_by_connecting_with_us_on" }} <a href="{{ $b.facebook }}" target="_blank" rel="noopener">{{ i18n "facebook" }}</a>.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">New to raw?</p>
-      <h2>Switching is simpler than you think</h2>
+      <p class="eyebrow">{{ i18n "new_to_raw" }}</p>
+      <h2>{{ i18n "switching_is_simpler_than_you_think" }}</h2>
     </div>
     <ol class="steps">
-      <li><h3>Start hungry</h3><p>A half-day or full-day fast before the first raw meal makes sure your pet comes to the bowl with a good appetite.</p></li>
-      <li><h3>Go small</h3><p>Offer a smaller portion at first and watch how they handle the fresh food.</p></li>
-      <li><h3>Swap gradually</h3><p>Replace a little more of the old food with raw at each meal, adjusting the pace to your pet’s digestion.</p></li>
+      <li><h3>{{ i18n "start_hungry" }}</h3><p>{{ i18n "a_half_day_or_full_day_fast_before_the_first_raw_meal_makes_sure" }}</p></li>
+      <li><h3>{{ i18n "go_small" }}</h3><p>{{ i18n "offer_a_smaller_portion_at_first_and_watch_how_they_handle_the_fr" }}</p></li>
+      <li><h3>{{ i18n "swap_gradually" }}</h3><p>{{ i18n "replace_a_little_more_of_the_old_food_with_raw_at_each_meal_adjus" }}</p></li>
     </ol>
-    <p class="center"><a class="link-arrow" href="{{ "nutrition/" | relURL }}#transitioning">Full transition tips {{ partial "icon.html" "arrow" }}</a></p>
+    <p class="center"><a class="link-arrow" href="{{ "nutrition/" | relLangURL }}#transitioning">{{ i18n "full_transition_tips" }} {{ partial "icon.html" "arrow" }}</a></p>
   </div>
 </section>
 
 <section class="photo-band">
-  {{ partial "img.html" (dict "src" "hero-girl-dog.jpg" "alt" "A little girl hugging her dog on the floor" "sizes" "100vw") }}
+  {{ partial "img.html" (dict "src" "hero-girl-dog.jpg" "alt" (i18n "a_little_girl_hugging_her_dog_on_the_floor") "sizes" "100vw") }}
 </section>
 
 <section class="section">
   <div class="wrap">
-    <h2>Our pet community</h2>
+    <h2>{{ i18n "our_pet_community" }}</h2>
     <div class="photo-row">
       {{- range slice
-        (dict "src" "hero-woman-dog.jpg" "alt" "A woman embracing her dog")
-        (dict "src" "hero-woman-dog-2.jpg" "alt" "A woman cuddling her dog")
-        (dict "src" "hero-boxers.jpg" "alt" "Two boxer dogs looking up together")
-        (dict "src" "hero-white-dog.jpg" "alt" "A white dog looking at the camera") }}
+        (dict "src" "hero-woman-dog.jpg" "alt" (i18n "a_woman_embracing_her_dog"))
+        (dict "src" "hero-woman-dog-2.jpg" "alt" (i18n "a_woman_cuddling_her_dog"))
+        (dict "src" "hero-boxers.jpg" "alt" (i18n "two_boxer_dogs_looking_up_together"))
+        (dict "src" "hero-white-dog.jpg" "alt" (i18n "a_white_dog_looking_at_the_camera")) }}
       <figure>{{ partial "img.html" (dict "src" .src "alt" .alt "sizes" "(min-width: 900px) 360px, 100vw") }}</figure>
       {{- end }}
     </div>
@@ -108,22 +108,22 @@
 <section class="section">
   <div class="wrap split split-reverse">
     <div>
-      <p class="eyebrow">More than a pet food store</p>
-      <h2>Meal plans, puppy classes and delivery</h2>
-      <p>What goes in the bowl has a big effect on health. If your dog or cat is dealing with a health issue, we can put together a meal plan to help. We have plans for:</p>
+      <p class="eyebrow">{{ i18n "more_than_a_pet_food_store" }}</p>
+      <h2>{{ i18n "meal_plans_puppy_classes_and_delivery" }}</h2>
+      <p>{{ i18n "what_goes_in_the_bowl_has_a_big_effect_on_health_if_your_dog_or_c" }}</p>
       <ul class="chips">
-        {{- range slice "Allergies" "Cancer" "Renal conditions" "Liver conditions" "Digestive problems" "Aging" }}
+        {{- range slice (i18n "allergies") (i18n "cancer") (i18n "renal_conditions") (i18n "liver_conditions") (i18n "digestive_problems") (i18n "aging") }}
         <li>{{ . }}</li>
         {{- end }}
       </ul>
       <div class="mini-links">
-        <a href="{{ "services/" | relURL }}#meal-plans"><strong>Meal plans</strong><span>Built around your pet’s needs</span></a>
-        <a href="{{ "puppy-kindergarten/" | relURL }}"><strong>Puppy Kindergarten</strong><span>For puppies 9–24 weeks</span></a>
-        <a href="{{ "deliveries/" | relURL }}"><strong>Delivery</strong><span>Never run out of food</span></a>
+        <a href="{{ "services/" | relLangURL }}#meal-plans"><strong>{{ i18n "meal_plans" }}</strong><span>{{ i18n "built_around_your_pet_s_needs" }}</span></a>
+        <a href="{{ "puppy-kindergarten/" | relLangURL }}"><strong>{{ i18n "puppy_kindergarten" }}</strong><span>{{ i18n "for_puppies_9_24_weeks" }}</span></a>
+        <a href="{{ "deliveries/" | relLangURL }}"><strong>{{ i18n "delivery" }}</strong><span>{{ i18n "never_run_out_of_food" }}</span></a>
       </div>
     </div>
     <div class="split-media">
-      {{ partial "img.html" (dict "src" "banner-puppy.jpg" "alt" "A puppy rolling on the grass" "class" "media-crop" "sizes" "(min-width: 900px) 520px, 100vw") }}
+      {{ partial "img.html" (dict "src" "banner-puppy.jpg" "alt" (i18n "a_puppy_rolling_on_the_grass") "class" "media-crop" "sizes" "(min-width: 900px) 520px, 100vw") }}
     </div>
   </div>
 </section>
@@ -131,29 +131,29 @@
 <section class="section section-tint" id="visit">
   <div class="wrap">
     <div class="section-head">
-      <p class="eyebrow">Visit us</p>
-      <h2>Find us on West Boulevard in {{ $b.neighbourhood }}</h2>
-      <p>A trusted neighbourhood source for over a decade — recommended by trainers, K9 police handlers, breeders, rescue organizations and holistic veterinarians across the Lower Mainland.</p>
+      <p class="eyebrow">{{ i18n "visit_us" }}</p>
+      <h2>{{ i18n "visit_heading" (dict "Neighbourhood" $b.neighbourhood) }}</h2>
+      <p>{{ i18n "a_trusted_neighbourhood_source_for_over_a_decade_recommended_by_t" }}</p>
     </div>
     <div class="visit">
       <div class="visit-photos">
-        {{ partial "img.html" (dict "src" "store/storefront.jpg" "alt" "Simply Natural Raw Pet Food storefront on West Boulevard" "sizes" "(min-width: 900px) 300px, 50vw") }}
-        {{ partial "img.html" (dict "src" "store/interior-aisle.jpg" "alt" "Inside the store" "sizes" "(min-width: 900px) 300px, 50vw") }}
+        {{ partial "img.html" (dict "src" "store/storefront.jpg" "alt" (i18n "simply_natural_raw_pet_food_storefront_on_west_boulevard") "sizes" "(min-width: 900px) 300px, 50vw") }}
+        {{ partial "img.html" (dict "src" "store/interior-aisle.jpg" "alt" (i18n "inside_the_store") "sizes" "(min-width: 900px) 300px, 50vw") }}
       </div>
       <div class="visit-card">
         <h3>{{ site.Title }}</h3>
-        <p class="open-status pill" data-open-status><span class="dot"></span><span data-open-text>Open 7 days a week</span></p>
+        <p class="open-status pill" data-open-status><span class="dot"></span><span data-open-text>{{ i18n "open_7_days_a_week" }}</span></p>
         <ul class="contact-list">
           <li>{{ partial "icon.html" "pin" }}<a href="{{ $b.mapsLink }}" target="_blank" rel="noopener">{{ $b.street }}<br>{{ $b.city }}, {{ $b.region }} {{ $b.postal }}</a></li>
-          <li>{{ partial "icon.html" "phone" }}<a href="tel:{{ $tel }}">{{ $b.phone }}</a></li>
-          <li>{{ partial "icon.html" "mail" }}<a href="mailto:{{ $b.email }}">{{ $b.email }}</a></li>
+          <li>{{ partial "icon.html" "phone" }}<a href="tel:{{ $tel }}"><bdi dir="ltr">{{ $b.phone }}</bdi></a></li>
+          <li>{{ partial "icon.html" "mail" }}<a href="mailto:{{ $b.email }}"><bdi dir="ltr">{{ $b.email }}</bdi></a></li>
         </ul>
         {{ partial "hours.html" . }}
-        <p class="perk">{{ partial "icon.html" "star" }}Ask about our frequent buyer program.</p>
-        <a class="btn btn-primary btn-block" href="{{ $b.mapsLink }}" target="_blank" rel="noopener">Get directions</a>
+        <p class="perk">{{ partial "icon.html" "star" }}{{ i18n "ask_about_our_frequent_buyer_program" }}</p>
+        <a class="btn btn-primary btn-block" href="{{ $b.mapsLink }}" target="_blank" rel="noopener">{{ i18n "get_directions" }}</a>
       </div>
       <div class="visit-map">
-        <iframe src="{{ $b.mapsEmbed }}" title="Map showing {{ site.Title }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="{{ $b.mapsEmbed }}" title="{{ i18n "map_showing" }} {{ site.Title }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>

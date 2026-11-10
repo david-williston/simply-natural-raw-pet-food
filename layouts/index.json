@@ -1,13 +1,14 @@
-{{- /* Search index. Extends PaperMod's: adds the home page and an hours/location entry. */ -}}
 {{- $b := site.Params.business -}}
-{{- $index := slice -}}
+{{- $index := slice (dict "title" site.Home.Title "content" site.Home.Description "permalink" site.Home.Permalink "summary" site.Home.Description) -}}
 {{- range site.RegularPages -}}
-    {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
-    {{- $index = $index | append (dict "title" .Title "content" (printf "%s %s" (.Params.lead | default "") .Plain) "permalink" .Permalink "summary" (.Description | default .Summary)) -}}
-    {{- end }}
+  {{- if and (not .Params.searchHidden) (ne .Layout "search") -}}
+    {{- $index = $index | append (dict "title" .Title "content" (printf "%s %s" (.Params.lead | default "") (.Plain | htmlUnescape)) "permalink" .Permalink "summary" (.Description | default (.Summary | plainify | htmlUnescape))) -}}
+  {{- end -}}
 {{- end -}}
 {{- $hours := slice -}}
-{{- range $b.hours }}{{ $hours = $hours | append (printf "%s %s" .label .text) }}{{ end -}}
-{{- $visit := printf "Opening hours: %s. %s. Address and location: %s, %s, %s %s, %s. Phone %s. Email %s. Directions, map, parking, store, shop. Methods of payment: %s. Frequent buyer program." (delimit $hours ", ") $b.holidayHours $b.street $b.city $b.region $b.postal $b.neighbourhood $b.phone $b.email (delimit $b.payments ", ") -}}
-{{- $index = $index | append (dict "title" "Hours & Location" "content" $visit "permalink" (printf "%s#visit" site.Home.Permalink) "summary" $visit) -}}
+{{- range $i, $h := $b.hours -}}
+  {{- $hours = $hours | append (printf "%s %s–%s" (i18n (index (slice "hours_weekdays" "hours_saturday" "hours_sunday") $i)) .open .close) -}}
+{{- end -}}
+{{- $visit := printf "%s: %s. %s. %s, %s, %s %s, %s. %s %s. %s %s. %s. %s" (i18n "hours_location") (delimit $hours ", ") (i18n "hours_holidays") $b.street $b.city $b.region $b.postal $b.neighbourhood (i18n "phone_number") $b.phone (i18n "email") $b.email (i18n "get_directions") (i18n "ask_about_our_frequent_buyer_program") -}}
+{{- $index = $index | append (dict "title" (i18n "hours_location") "content" $visit "permalink" (printf "%s#visit" site.Home.Permalink) "summary" $visit) -}}
 {{- $index | jsonify -}}

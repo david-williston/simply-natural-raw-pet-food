@@ -1,1 +1,1 @@
-<p><a class="btn btn-{{ .Get "style" | default "primary" }}" href="{{ strings.TrimPrefix "/" (.Get "href") | relURL }}">{{ .Get "text" }}</a></p>
+<p><a class="btn btn-{{ .Get "style" | default "primary" }}" href="{{ strings.TrimPrefix "/" (.Get "href") | relLangURL }}">{{ .Get "text" }}</a></p>

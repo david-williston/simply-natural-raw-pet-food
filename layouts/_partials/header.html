@@ -1,38 +1,39 @@
 {{- $b := site.Params.business -}}
 {{- $tel := replace $b.phone "-" "" -}}
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">{{ i18n "skip_to_content" }}</a>
 {{- with site.Params.announcement }}{{ if .enabled }}
 <div class="announce">
-  <span>{{ .text }}</span>
-  {{ with .url }}<a href="{{ strings.TrimPrefix "/" . | relURL }}"{{ if strings.HasSuffix . ".pdf" }} target="_blank" rel="noopener"{{ end }}>{{ $.Site.Params.announcement.linkText | default "Learn more" }} {{ partial "icon.html" "arrow" }}</a>{{ end }}
+  <span>{{ i18n "our_holiday_sale_is_on" }}</span>
+  {{ with .url }}<a href="{{ strings.TrimPrefix "/" . | relURL }}" title="{{ i18n "flyer_note" }}"{{ if strings.HasSuffix . ".pdf" }} target="_blank" rel="noopener"{{ end }}>{{ i18n "see_the_flyer" }} {{ partial "icon.html" "arrow" }}</a>{{ end }}
 </div>
 {{- end }}{{ end }}
 <div class="topbar">
   <div class="wrap topbar-inner">
     <a href="{{ $b.mapsLink }}" target="_blank" rel="noopener">{{ partial "icon.html" "pin" }}{{ $b.street }}, {{ $b.neighbourhood }}</a>
-    <span class="open-status" data-open-status>{{ partial "icon.html" "clock" }}<span data-open-text>Open 7 days a week</span></span>
-    <a class="topbar-phone" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}{{ $b.phone }}</a>
+    <span class="open-status" data-open-status>{{ partial "icon.html" "clock" }}<span data-open-text>{{ i18n "open_7_days_a_week" }}</span></span>
+    <a class="topbar-phone" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}<bdi dir="ltr">{{ $b.phone }}</bdi></a>
+    {{ partial "languages.html" . }}
   </div>
 </div>
 <header class="site-header">
   <div class="wrap site-header-inner">
-    <a class="brand" href="{{ "" | relLangURL }}" aria-label="{{ site.Title }} – home">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Title }} – {{ i18n "home" }}">
       {{- $logo := resources.Get "images/logo.jpg" -}}
       <img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" alt="{{ site.Title }}">
     </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="{{ i18n "menu" }}">
       <span></span><span></span><span></span>
     </button>
-    <nav id="site-nav" class="site-nav" aria-label="Main">
+    <nav id="site-nav" class="site-nav" aria-label="{{ i18n "main" }}">
       <ul>
         {{- $current := . -}}
         {{- range site.Menus.main }}
         {{- $active := or ($current.IsMenuCurrent "main" .) (eq $current.RelPermalink .URL) (and (eq .Page (site.GetPage "/services")) (eq $current (site.GetPage "/puppy-kindergarten"))) }}
-        <li><a href="{{ .URL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        <li><a href="{{ .URL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ i18n .Identifier }}</a></li>
         {{- end }}
       </ul>
-      <a class="nav-search{{ if eq .Layout "search" }} active{{ end }}" href="{{ "search/" | relURL }}" aria-label="Search" title="Search (Alt + /)" accesskey="/">{{ partial "icon.html" "search" }}<span>Search</span></a>
-      <a class="btn btn-primary nav-cta" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}Call {{ $b.phone }}</a>
+      <a class="nav-search{{ if eq .Layout "search" }} active{{ end }}" href="{{ "search/" | relLangURL }}" aria-label="{{ i18n "search" }}" title="{{ i18n "search_alt" }}" accesskey="/">{{ partial "icon.html" "search" }}<span>{{ i18n "search" }}</span></a>
+      <a class="btn btn-primary nav-cta" href="tel:{{ $tel }}">{{ partial "icon.html" "phone" }}{{ i18n "call" }} <bdi dir="ltr">{{ $b.phone }}</bdi></a>
     </nav>
   </div>
 </header>
