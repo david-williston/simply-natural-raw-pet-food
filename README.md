@@ -31,20 +31,20 @@ English content lives in `content/*.md`; translations use matching names such as
 between versions. Shared text, including homepage copy, is in `i18n/<language>.json`.
 The business name, brands, address, phone and email remain unchanged.
 
-The header uses the paw-against-glass animation in `assets/images/logo-animated.svg`.
-Its blank demo margins are cropped to preserve the original logo's header size.
-The animation is self-contained and shared across languages. The name and tagline
-are immediately visible, followed by the paw pressing into view. It plays once on each page
-load, then holds the complete logo without looping. Visitors who prefer reduced motion, and browsers
-without SVG support, receive `assets/images/logo.jpg`. The sticky header is opaque
-white so underlying sections do not reveal the logo image's canvas.
+The header immediately shows the original name and tagline from
+`assets/images/logo-text.svg`. Footprints then run upward from the bottom edge
+and the final paw lands in the header, completing the logo and staying there.
+Each footprint is sized from the actual displayed logo's paw crop, including on
+mobile, with widely spaced strides. The logo sits on the right and the mobile
+menu on the left in all languages. The artwork comes from the original logo and its glass-press animation.
+The completed logo remains visible during later footprint passes every 20 seconds.
 
-A brief trail of mirrored paw prints follows randomized routes around the screen
-edges on page entry and every 20 seconds while the tab is visible. It waits for the
-logo reveal before its first pass. It uses the original paw artwork,
-does not intercept clicks, pauses in hidden tabs, and is disabled for reduced
-motion. Prints use soft cream over dark sections and the original olive over
-light sections, adapting as visitors scroll. The StrayCats.love footer credit and logo are
+The effect is shared across languages, does not intercept clicks, and pauses in
+hidden tabs. Reduced motion and JavaScript-free browsing receive the complete
+static logo. The sticky header is opaque white. Trail prints use soft cream over
+dark sections and the original olive over light sections, adapting as visitors
+scroll; the paw in the logo retains the original branding.
+The StrayCats.love footer credit and logo are
 temporarily hidden; set `params.showDeveloperCredit: true` in `hugo.yaml` to restore them.
 
 Search uses an index for the current language, and result cards show excerpts

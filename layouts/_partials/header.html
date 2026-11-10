@@ -19,12 +19,15 @@
   <div class="wrap site-header-inner">
     <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="{{ site.Title }} – {{ i18n "home" }}">
       {{- $logo := resources.Get "images/logo.jpg" -}}
-      {{- $animatedLogo := resources.Get "images/logo-animated.svg" | fingerprint -}}
+      {{- $textLogo := resources.Get "images/logo-text.svg" | fingerprint -}}
+      {{- $pawLogo := resources.Get "images/paw-print.svg" | fingerprint -}}
       <picture>
         <source media="(prefers-reduced-motion: reduce)" srcset="{{ $logo.RelPermalink }}">
-        <source type="image/svg+xml" srcset="{{ $animatedLogo.RelPermalink }}" data-logo-animation data-static-logo="{{ $logo.RelPermalink }}">
+        <source type="image/svg+xml" srcset="{{ $textLogo.RelPermalink }}" data-logo-text data-static-logo="{{ $logo.RelPermalink }}">
         <img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" alt="{{ site.Title }}">
       </picture>
+      <span class="logo-paw" aria-hidden="true" hidden><img src="{{ $pawLogo.RelPermalink }}" width="130" height="108" alt=""></span>
+      <noscript><style>.brand picture { display: none; }</style><img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" alt="{{ site.Title }}"></noscript>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="{{ i18n "menu" }}">
       <span></span><span></span><span></span>
