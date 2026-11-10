@@ -15,6 +15,8 @@ minify:
 
 params:
   env: production
+  # Temporarily hidden; set true to restore the StrayCats credit and logo.
+  showDeveloperCredit: false
   description: >-
     Raw, natural food for dogs and cats in Kerrisdale, Vancouver. Frozen raw
     diets, select dry and canned food, supplements, treats, custom meal plans,

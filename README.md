@@ -41,7 +41,8 @@ white so underlying sections do not reveal the logo image's canvas.
 
 A brief trail of mirrored paw prints crosses the bottom edge once per tab session,
 after the logo reveal. It uses the original paw artwork, does not intercept clicks,
-and is disabled for reduced motion. The footer credits StrayCats.love with its logo.
+and is disabled for reduced motion. The StrayCats.love footer credit and logo are
+temporarily hidden; set `params.showDeveloperCredit: true` in `hugo.yaml` to restore them.
 
 Search uses an index for the current language, and result cards show excerpts
 around matching text with highlighted terms. No external translation or search

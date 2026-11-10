@@ -31,11 +31,13 @@
   </div>
   <div class="wrap footer-bottom">
     <span>© {{ now.Year }} {{ site.Title }}</span>
+    {{- if site.Params.showDeveloperCredit -}}
     {{- $creditLogo := (resources.Get "images/straycats-logo.webp").Resize "160x webp q85" -}}
     <a class="developer-credit" href="https://straycats.love/" target="_blank" rel="noopener">
       <span>{{ i18n "built_by_straycats" }}</span>
       <img src="{{ $creditLogo.RelPermalink }}" width="{{ $creditLogo.Width }}" height="{{ $creditLogo.Height }}" alt="" loading="lazy" decoding="async">
     </a>
+    {{- end }}
   </div>
 </footer>
 
