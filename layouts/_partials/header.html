@@ -25,16 +25,6 @@
         <source type="image/svg+xml" srcset="{{ $animatedLogo.RelPermalink }}" data-logo-animation data-static-logo="{{ $logo.RelPermalink }}">
         <img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" alt="{{ site.Title }}">
       </picture>
-      <script>
-      (function () {
-        var source = document.currentScript.previousElementSibling.querySelector('[data-logo-animation]');
-        try {
-          if (sessionStorage.getItem('sn-logo-intro-v1') || matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            source.type = 'image/jpeg'; source.srcset = source.dataset.staticLogo;
-          } else { sessionStorage.setItem('sn-logo-intro-v1', 'seen'); }
-        } catch (e) { /* The SVG itself plays once if session storage is unavailable. */ }
-      })();
-      </script>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="{{ i18n "menu" }}">
       <span></span><span></span><span></span>
