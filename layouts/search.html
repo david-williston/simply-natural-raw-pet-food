@@ -12,8 +12,8 @@
   <div id="searchbox" class="searchbox" data-index="{{ site.Home.RelPermalink }}index.json">
     <div class="search-field">
       {{ partial "icon.html" "search" }}
-      <input id="searchInput" autofocus disabled placeholder="{{ .Params.placeholder | default (i18n "search") }}"
-        aria-label="{{ i18n "search" }}" type="search" autocomplete="off" maxlength="64">
+      <input id="searchInput" disabled placeholder="{{ .Params.placeholder | default (i18n "search") }}"
+        aria-label="{{ i18n "search" }}" type="search" enterkeyhint="search" autocapitalize="none" autocomplete="off" maxlength="64">
     </div>
     <ul id="searchResults" class="searchResults" aria-label="{{ i18n "search_results" }}" aria-live="polite"></ul>
     <p class="search-empty" hidden>{{ i18n "search_empty" }}</p>

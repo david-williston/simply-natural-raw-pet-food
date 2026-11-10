@@ -37,9 +37,9 @@ and the final paw lands in the header, completing the logo and staying there.
 Each footprint is sized from the actual displayed logo's paw crop, including on
 mobile, with widely spaced strides. The logo sits on the right and the mobile
 menu on the left in all languages. The artwork comes from the original logo and its glass-press animation.
-The steps use quick pairs and short pauses; each print lingers for 4.8 seconds,
-with a slow fade after its initial hold.
-The completed logo remains visible during later footprint passes every 20 seconds.
+The steps use quick pairs and short pauses. Each print fades over 20 seconds to
+20% opacity and remains there. The trail runs once per page load; the final paw
+in the logo remains fully opaque.
 
 The effect is shared across languages, does not intercept clicks, and pauses in
 hidden tabs. Reduced motion and JavaScript-free browsing receive the complete
@@ -52,6 +52,11 @@ temporarily hidden; set `params.showDeveloperCredit: true` in `hugo.yaml` to res
 Search uses an index for the current language, and result cards show excerpts
 around matching text with highlighted terms. No external translation or search
 service is required. The original sale flyer is an English PDF in every version.
+On mobile, search follows the visual viewport when the keyboard opens, keeps the
+field and scrollable results above it, and dismisses the keyboard with Search.
+Page arrival and popular-query buttons do not automatically open a mobile keyboard.
+The hamburger menu opens and closes with a slide/fade, morphs into a close icon,
+and has a soft glint. Motion effects respect reduced-motion preferences.
 
 After changing content, build and check all translated pages and links:
 

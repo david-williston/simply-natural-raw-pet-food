@@ -51,9 +51,20 @@
   // Mobile menu
   var toggle = document.querySelector('.nav-toggle'), nav = document.getElementById('site-nav');
   if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      var open = nav.classList.toggle('open');
+    var mobileMenu = matchMedia('(max-width: 1040px)');
+    var setMenu = function (open) {
+      nav.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', open);
+      nav.inert = mobileMenu.matches && !open;
+    };
+    setMenu(false);
+    toggle.addEventListener('click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });
+    mobileMenu.addEventListener('change', function () { setMenu(false); });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { setMenu(false); toggle.focus(); }
+    });
+    document.addEventListener('click', function (event) {
+      if (mobileMenu.matches && !nav.contains(event.target) && !toggle.contains(event.target)) setMenu(false);
     });
   }
 

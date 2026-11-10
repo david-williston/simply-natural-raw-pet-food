@@ -8,6 +8,8 @@
   if (!trail || !logo || !landing) return;
   const timers = new Set();
   let landed = false;
+  let started = false;
+  let paused = document.hidden;
 
   // These are the exact paw crop bounds within the 246 × 160 original logo.
   const measureLogo = () => {
@@ -23,12 +25,32 @@
     );
     print.classList.toggle('on-dark', Boolean(below?.closest('.hero, .cta-band, .site-footer')));
   };
+  const arm = task => {
+    task.deadline = performance.now() + task.remaining;
+    task.timer = setTimeout(() => { timers.delete(task); task.callback(); }, task.remaining);
+  };
   const later = (callback, delay) => {
-    const timer = setTimeout(() => { timers.delete(timer); callback(); }, delay);
-    timers.add(timer);
+    const task = { callback, remaining: delay, timer: null, deadline: 0 };
+    timers.add(task);
+    if (!paused) arm(task);
+  };
+  const pause = () => {
+    if (paused) return;
+    paused = true;
+    timers.forEach(task => {
+      task.remaining = Math.max(0, task.deadline - performance.now());
+      clearTimeout(task.timer);
+    });
+    trail.classList.add('paused');
+  };
+  const resume = () => {
+    if (!paused || reducedMotion.matches) return;
+    paused = false;
+    timers.forEach(arm);
+    trail.classList.remove('paused');
   };
   const stop = () => {
-    timers.forEach(clearTimeout); timers.clear(); trail.replaceChildren();
+    timers.forEach(task => clearTimeout(task.timer)); timers.clear(); trail.replaceChildren();
   };
   const land = () => {
     if (landed) return;
@@ -37,7 +59,7 @@
     landing.classList.add('landed');
   };
   const staticLogo = () => {
-    stop(); landed = true;
+    stop(); landed = true; started = true;
     landing.hidden = true;
     if (logoSource) { logoSource.type = 'image/jpeg'; logoSource.srcset = logoSource.dataset.staticLogo; }
   };
@@ -71,13 +93,14 @@
     };
   };
   const play = () => {
-    if (document.hidden || reducedMotion.matches) return;
+    if (started || reducedMotion.matches) return;
     const route = createRoute();
-    if (!route) { later(play, 20000); return; }
+    if (!route) { staticLogo(); return; }
+    started = true;
     const steps = Math.min(20, Math.max(5, Math.round(route.length / (route.height * 1.8))));
     // Quick pairs, a little hesitation, then another scamper.
     const beats = [120, 310, 105, 450, 135, 260];
-    const printLifetime = 4800;
+    const fadeDuration = 20000;
     let landingAt = 0;
     for (let step = 0; step < steps; step++) {
       later(() => {
@@ -90,30 +113,26 @@
         print.style.top = `${point.y + Math.cos(point.heading) * side}px`;
         print.style.setProperty('--paw-width', `${point.width}px`);
         print.style.setProperty('--paw-height', `${point.height}px`);
-        print.style.setProperty('--paw-duration', `${printLifetime}ms`);
+        print.style.setProperty('--paw-fade-duration', `${fadeDuration}ms`);
         print.style.setProperty('--paw-turn', `${point.heading * 180 / Math.PI + 90 + (step % 2 ? 8 : -8)}deg`);
         const image = document.createElement('img');
         image.src = trail.dataset.pawSrc; image.alt = '';
         image.width = 130; image.height = 108;
         image.style.transform = step % 2 ? 'none' : 'scaleX(-1)';
         print.append(image); trail.append(print); updateTone(print);
-        print.addEventListener('animationend', () => print.remove(), { once: true });
-        later(() => print.remove(), printLifetime + 300);
       }, landingAt);
       landingAt += beats[step % beats.length] * (.9 + Math.random() * .2);
     }
     // The final print is in the header itself, at the original paw's exact size.
     later(land, landingAt + 100);
-    later(play, 20000);
   };
   const start = delay => {
-    stop();
     if (reducedMotion.matches) { staticLogo(); return; }
-    if (!document.hidden) later(play, delay);
+    later(play, delay);
   };
   start(350);
-  document.addEventListener('visibilitychange', () => start(350));
-  reducedMotion.addEventListener('change', () => start(350));
+  document.addEventListener('visibilitychange', () => { if (document.hidden) pause(); else resume(); });
+  reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) staticLogo(); });
   let scrollPending = false;
   window.addEventListener('scroll', () => {
     if (scrollPending || !trail.children.length) return;
@@ -123,6 +142,6 @@
       scrollPending = false;
     });
   }, { passive: true });
-  window.addEventListener('pagehide', stop);
-  window.addEventListener('pageshow', event => { if (event.persisted) start(350); });
+  window.addEventListener('pagehide', pause);
+  window.addEventListener('pageshow', event => { if (event.persisted) resume(); });
 })();

@@ -7,6 +7,44 @@ const empty = document.querySelector('.search-empty');
 const error = document.querySelector('.search-error');
 let pages = [];
 let fuse;
+// Mobile keyboards resize the visual viewport even when the layout viewport
+// stays tall. Keep the focused field and a scrollable result area above it.
+function setupKeyboardViewport() {
+  if (!input || !box) return;
+  const root = document.documentElement;
+  const viewport = window.visualViewport;
+  let restingHeight = viewport?.height || innerHeight;
+  let lastWidth = innerWidth;
+  let pending = false;
+  const update = () => {
+    pending = false;
+    const height = viewport?.height || innerHeight;
+    if (Math.abs(innerWidth - lastWidth) > 80) {
+      restingHeight = Math.max(innerHeight, height);
+      lastWidth = innerWidth;
+    }
+    const focused = document.activeElement === input;
+    const wasOpen = root.classList.contains('search-keyboard-open');
+    if (!wasOpen && !focused) restingHeight = Math.max(restingHeight, height);
+    const inset = Math.max(0, restingHeight - height, innerHeight - height);
+    const open = innerWidth <= 1040 && inset > 100 && (focused || wasOpen) && (viewport?.scale || 1) < 1.1;
+    const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 84;
+    root.style.setProperty('--search-visible-height', `${height}px`);
+    root.style.setProperty('--search-header-height', `${headerHeight}px`);
+    root.style.setProperty('--search-keyboard-inset', `${open ? inset : 0}px`);
+    root.classList.toggle('search-keyboard-open', open);
+    if (open && !wasOpen && focused) {
+      requestAnimationFrame(() => input.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'auto' }));
+    }
+  };
+  const schedule = () => { if (!pending) { pending = true; requestAnimationFrame(update); } };
+  viewport?.addEventListener('resize', schedule);
+  viewport?.addEventListener('scroll', schedule);
+  window.addEventListener('resize', schedule);
+  input.addEventListener('focus', schedule);
+  input.addEventListener('blur', schedule);
+  update();
+}
 const fold = text => String(text || '').normalize('NFKD').toLocaleLowerCase().replace(/\p{M}/gu, '');
 
 // Keep offsets into the original text so accents, Persian and CJK characters
@@ -142,8 +180,14 @@ async function initialize() {
     input.disabled = false;
     input.addEventListener('input', search);
     input.addEventListener('search', search);
+    input.addEventListener('keydown', event => {
+      if (event.key === 'Enter' && innerWidth <= 1040) { event.preventDefault(); search(); input.blur(); }
+    });
     document.querySelectorAll('.search-suggest button').forEach(button => {
-      button.addEventListener('click', () => { input.value = button.dataset.q; search(); input.focus(); });
+      button.addEventListener('click', () => {
+        input.value = button.dataset.q; search();
+        if (matchMedia('(pointer: fine)').matches) input.focus({ preventScroll: true });
+      });
     });
     const query = new URLSearchParams(location.search).get('q');
     if (query) { input.value = query; search(); }
@@ -162,4 +206,5 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowUp') { event.preventDefault(); if (current > 0) links[current - 1].focus(); else input.focus(); }
 });
 
+setupKeyboardViewport();
 initialize();
