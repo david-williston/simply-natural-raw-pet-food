@@ -478,5 +478,8 @@
   },
   "back_home": {
     "other": "Back to home"
+  },
+  "built_by_straycats": {
+    "other": "Built by the developers of StrayCats.love"
   }
 }

@@ -478,5 +478,8 @@
   },
   "back_home": {
     "other": "返回首頁"
+  },
+  "built_by_straycats": {
+    "other": "由 StrayCats.love 開發團隊製作"
   }
 }

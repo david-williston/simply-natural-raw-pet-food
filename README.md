@@ -33,8 +33,15 @@ The business name, brands, address, phone and email remain unchanged.
 
 The header uses the paw-against-glass animation in `assets/images/logo-animated.svg`.
 Its blank demo margins are cropped to preserve the original logo's header size.
-The animation is self-contained and shared across languages. Visitors who prefer
-reduced motion, and browsers without SVG support, receive `assets/images/logo.jpg`.
+The animation is self-contained and shared across languages. It plays once per
+browser tab session, then holds the complete logo. Later page visits in the same
+tab use the original still image. Visitors who prefer reduced motion, and browsers
+without SVG support, receive `assets/images/logo.jpg`. The sticky header is opaque
+white so underlying sections do not reveal the logo image's canvas.
+
+A brief trail of mirrored paw prints crosses the bottom edge once per tab session,
+after the logo reveal. It uses the original paw artwork, does not intercept clicks,
+and is disabled for reduced motion. The footer credits StrayCats.love with its logo.
 
 Search uses an index for the current language, and result cards show excerpts
 around matching text with highlighted terms. No external translation or search

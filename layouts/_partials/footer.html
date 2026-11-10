@@ -31,9 +31,18 @@
   </div>
   <div class="wrap footer-bottom">
     <span>© {{ now.Year }} {{ site.Title }}</span>
-    <span>{{ i18n "built_with" }} <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></span>
+    {{- $creditLogo := (resources.Get "images/straycats-logo.webp").Resize "160x webp q85" -}}
+    <a class="developer-credit" href="https://straycats.love/" target="_blank" rel="noopener">
+      <span>{{ i18n "built_by_straycats" }}</span>
+      <img src="{{ $creditLogo.RelPermalink }}" width="{{ $creditLogo.Width }}" height="{{ $creditLogo.Height }}" alt="" loading="lazy" decoding="async">
+    </a>
   </div>
 </footer>
+
+{{- $paw := resources.Get "images/paw-print.svg" | fingerprint -}}
+<div class="paw-trail" aria-hidden="true" data-paw-src="{{ $paw.RelPermalink }}"></div>
+{{- $pawScript := resources.Get "js/paw-trail.js" | minify | fingerprint -}}
+<script defer src="{{ $pawScript.RelPermalink }}" integrity="{{ $pawScript.Data.Integrity }}"></script>
 
 <script>
 (function () {

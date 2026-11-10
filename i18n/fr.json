@@ -478,5 +478,8 @@
   },
   "back_home": {
     "other": "Retour à l’accueil"
+  },
+  "built_by_straycats": {
+    "other": "Créé par les développeurs de StrayCats.love"
   }
 }

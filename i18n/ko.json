@@ -478,5 +478,8 @@
   },
   "back_home": {
     "other": "홈으로 돌아가기"
+  },
+  "built_by_straycats": {
+    "other": "StrayCats.love 개발팀이 제작했습니다"
   }
 }
