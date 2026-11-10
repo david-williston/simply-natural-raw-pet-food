@@ -477,16 +477,19 @@ bdi { unicode-bidi: isolate; }
 :lang(zh) h1, :lang(zh) h2, :lang(ja) h1, :lang(ja) h2, :lang(ko) h1, :lang(ko) h2 { line-height: 1.45; }
 
 /* A brief, occasional paw-print trail, outside page flow and clear of controls. */
-.paw-trail { position: fixed; inset-inline: 0; bottom: 8px; height: 96px; overflow: hidden; pointer-events: none; z-index: 30; contain: layout paint; }
-.paw-step { --paw-opacity: .65; position: absolute; width: 56px; height: 47px; opacity: 0; transform-origin: center; animation: paw-contact 2.8s ease-out both; }
+.paw-trail { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 30; contain: layout paint; }
+.paw-step { --paw-opacity: .65; position: absolute; width: 56px; height: 47px; opacity: 0; transform-origin: center; animation: paw-contact 2.2s ease-out both; }
 .paw-step img { width: 56px; height: 47px; display: block; border-radius: 0; }
 .paw-step.on-dark { --paw-opacity: .38; }
 .paw-step.on-dark img { filter: brightness(0) invert(1) sepia(.25); }
 @keyframes paw-contact {
-  0% { opacity: 0; transform: translateX(-50%) rotate(var(--paw-turn)) scale(.72, .86); }
-  18% { opacity: var(--paw-opacity); transform: translateX(-50%) rotate(var(--paw-turn)) scale(1.05, .98); }
-  32%, 68% { opacity: var(--paw-opacity); transform: translateX(-50%) rotate(var(--paw-turn)) scale(1); }
-  100% { opacity: 0; transform: translateX(-50%) rotate(var(--paw-turn)) scale(.95); }
+  0% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(.72, .86); }
+  18% { opacity: var(--paw-opacity); transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(1.05, .98); }
+  32%, 68% { opacity: var(--paw-opacity); transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--paw-turn)) scale(.95); }
+}
+@media (max-width: 600px) {
+  .paw-step, .paw-step img { width: 40px; height: 34px; }
 }
 .developer-credit { display: inline-flex; gap: 12px; align-items: center; max-width: 100%; }
 .developer-credit span { max-width: 290px; }

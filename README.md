@@ -39,8 +39,8 @@ tab use the original still image. Visitors who prefer reduced motion, and browse
 without SVG support, receive `assets/images/logo.jpg`. The sticky header is opaque
 white so underlying sections do not reveal the logo image's canvas.
 
-A brief trail of mirrored paw prints crosses the bottom edge on page entry and
-every 30 seconds while the tab is visible. On a first visit it waits for the logo
+A brief trail of mirrored paw prints follows randomized routes around the screen
+edges on page entry and every 45–75 seconds while the tab is visible. On a first visit it waits for the logo
 reveal; later visits show it after one second. It uses the original paw artwork,
 does not intercept clicks, pauses in hidden tabs, and is disabled for reduced
 motion. Prints use soft cream over dark sections and the original olive over
