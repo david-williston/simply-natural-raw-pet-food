@@ -75,7 +75,7 @@
   const play = () => {
     if (document.hidden || reducedMotion.matches) return;
     const route = createRoute();
-    if (!route) { later(play, 45000); return; }
+    if (!route) { later(play, 20000); return; }
     const steps = Math.min(20, Math.max(6, Math.round(route.length / 85)));
     const cadence = 145 + Math.random() * 65;
     const stride = innerWidth < 600 ? 6 : 9;
@@ -101,7 +101,7 @@
         later(() => print.remove(), 2500);
       }, step * cadence);
     }
-    later(play, 45000 + Math.random() * 30000);
+    later(play, 20000);
   };
   const start = delay => {
     stop();
