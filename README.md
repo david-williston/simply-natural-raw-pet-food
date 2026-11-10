@@ -2,6 +2,8 @@
 
 Hugo site using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme (git submodule in `themes/PaperMod`).
 
+Repository: [david-williston/simply-natural-raw-pet-food](https://github.com/david-williston/simply-natural-raw-pet-food).
+
 ## Run locally
 
 ```bash
